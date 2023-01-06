@@ -91,35 +91,35 @@
                     <span class="stitle">Adobe Analytics</span>
                     <br /> Increase your conversion rate by refining your conversion processes, campaigns, etc.
                     <br />
-                    <span class="link">http://www.adobe.com/marketing-cloud/web-analytics.html</span>
+                    <span class="link">https://www.adobe.com/marketing-cloud/web-analytics.html</span>
                 </p>
 
                 <p>
                     <span class="stitle">Adobe Experience Manager</span>
                     <br /> Digital Experience Management made easier.
                     <br />
-                    <span class="link">http://www.adobe.com/marketing-cloud/enterprise-content-management.html</span>
+                    <span class="link">https://www.adobe.com/marketing-cloud/enterprise-content-management.html</span>
                 </p>
 
                 <p>
                     <span class="stitle">Adobe Target</span>
                     <br /> Make every interaction count.
                     <br />
-                    <span class="link">http://www.adobe.com/marketing-cloud/testing-targeting.html</span>
+                    <span class="link">https://www.adobe.com/marketing-cloud/testing-targeting.html</span>
                 </p>
 
                 <p>
                     <span class="stitle">Adobe Media Optimizer</span>
                     <br /> Adobe keeps your ad campaign on point, on time and on budget.
                     <br />
-                    <span class="link">http://www.adobe.com/marketing-cloud/online-advertising-management.html</span>
+                    <span class="link">https://www.adobe.com/marketing-cloud/online-advertising-management.html</span>
                 </p>
 
                 <p>
                     <span class="stitle">Adobe Campaign</span>
                     <br /> Personalize and deliver campaigns across all of your online and offline channels
                     <br />
-                    <span class="link">http://www.adobe.com/marketing-cloud/campaign-management.html</span>
+                    <span class="link">https://www.adobe.com/marketing-cloud/campaign-management.html</span>
                 </p>
 
 
