@@ -9,11 +9,11 @@ username = cookies.find((ele)=>{
         
         return ele;
     }
-}).split("=")[1]
+})
 
 if(username)
 {
     let auserLogin=document.getElementById("userLogin");
     auserLogin.href="./user.html";
-    auserLogin.innerText=username;   
+    auserLogin.innerText=username.split("=")[1];   
 }
