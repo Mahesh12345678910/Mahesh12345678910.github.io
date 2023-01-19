@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+    <title>Geometrixx Clothiers</title>
     <!--Place DTM header below this-->
 
 
@@ -10,68 +10,12 @@
     <!--Place DTM header above this-->
 
 
-    <script id="dataLayerObj">
-        var digitalData = digitalData || {};
-        digitalData = {
-            page: {
-                pageInfo: {
-                    pageName: "",
-                    pageURL:"",
-                    referrerURL:"",
-                    server:""
-                }
-                },
-                categories :{
-                    primaryCategory:undefined,
-                    subCategory1:undefined,
-                    subCategory2 : undefined,
-                    subCategory3 : undefined
-                },
-                attributes:{
-                    country:"INDIA",
-                    date: new Date().toLocaleDateString()
-                }
-        };
-        
-        digitalData.page.pageInfo.pageName=document.title;
-        digitalData.page.pageInfo.pageURL=document.URL;
-        digitalData.page.pageInfo.referrerURL=document.referrer;
-        digitalData.page.pageInfo.server=window.location.hostname;
-        digitalData.page.pageInfo.pageName=document.title;
+    <script src="./dataLayer.js"></script>
 
-        let pageURL=document.URL;
-        let urlobj=new URL(pageURL);
-        let categories=urlobj.pathname.split("/");
-        for(let i=0;i<categories.length;i+=1)
-        {
-            if(i==0)
-            {
-                digitalData.categories.primaryCategory="Geometrixx"
-            }
-            else if(i==categories.length-1)
-            {
-
-                let key="subCategory"+i;
-                let val=categories[i].split(".")[0];
-                digitalData.categories[key]=val;
-            }
-            else
-            {
-                let key="subCategory"+i;
-                
-                digitalData.categories[key]=categories[i];   
-            }
-        }
-
-        digitalData.page.pageInfo.pageName=document.title;
-        digitalData.page.pageInfo.pageName=document.title;
-        digitalData.page.pageInfo.pageName=document.title;
-
-    </script>
     <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
     <!-- <script src="./add_Launch_Script.js"></script> -->
 
-    <title>Geometrixx Clothiers</title>
+ 
     <meta https-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="robots" content="noindex, nofollow">
     <script src="httpss://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -268,7 +212,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     </div>
 
     <!--Place DTM footer below this-->
-
+<script src="./user.js"></script>
     <script type="text/javascript">
         _satellite.pageBottom();
     </script>

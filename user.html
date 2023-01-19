@@ -4,29 +4,29 @@
 <head>
     <!--Place DTM header below this-->
 
-    <title>Geometrixx Clothiers-Login</title>
+    <title>Geometrixx Clothiers-Profile</title>
     <!--Place DTM header above this-->
     
-	<script src="./dataLayer.js"></script>
-    <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
+	<script src="./dataLayer.js">
+        
+    </script>
+	<script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
 
-<script>
 
-function logIn() {
-    let username=document.getElementById("loginName").value;
-    let tdate=new Date();
-    tdate.setTime(tdate.getTime()+(24*60*60*1000));
 
-    document.cookie="userName="+username+";expires="+tdate.toUTCString();
-document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
-window.location.href="./index.html";
-
-}
-</script>
 
 <script>
 function logOut() {
 document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged out.";
+let cookies=document.cookie.split(";");
+cookies.find((ele)=>{
+    ele=ele.trim();
+    if(ele.startsWith("userName"))
+    {
+        document.cookie="userName=;expires = Thu, 01 Jan 1970 00:00:00 GMT"
+    }
+})
+window.location.href="./index.html";
 }
 
 </script>
@@ -120,19 +120,25 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
                     <td>
                         <!---Form Start--->
                         <td>
-                            <table><span class="description">Log into Geometrixx<br/><br/></span>
+                            <table><span class="description">Welcome to Geometrixx  <span id="username"></span><br/><br/></span>
                                 <div class="form">
                                     <form method="post" action="login.html">
                                         <tr>
                                             <td class="search_title">User Name:</td>
                                             <td>
-                                                <input type="text" id="loginName" name="loginName" class="textinput" size="20">
+                                                <input type="text" name="loginName" id="loginName" class="textinput" size="20">
                                             </td>
                                         </tr>
                                         <tr>
                                             <td class="search_title">Password:</td>
                                             <td>
-                                                <input type="password" name="loginPassword" class="textinput" size="20">
+                                                <input type="password" name="loginPassword" class="textinput" size="20" value="mahesh118">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="search_title">Email:</td>
+                                            <td>
+                                                <input type="email"  id="loginEmail" name="userEmail" class="textinput" size="20">
                                             </td>
                                         </tr>
 					</form>
@@ -141,11 +147,7 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
                                         </tr>
 					           
                                         <tr>
-					    <td>
-					    </td>		
-                                            <td>
-                                                <input type="button" value="Log In" class="button" onclick="logIn()" />
-						<br/>
+                                           <td> 
 						<br/>			
 						<input type="button" value="Log Out" class="button"  onclick="logOut()"/>
                                             </td>
@@ -172,7 +174,24 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
         <!--start footer--><span class="footer">Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.<span style="float: right"> <a href="sitemap.html">Site Map</a></span></span>
         <!--end footer-->
     </div>
-
+    <script>
+        let username=undefined;
+        let cookies=(document.cookie).split(";");
+        username = cookies.find((ele)=>{
+            ele=ele.trim();
+        
+            if(ele.startsWith("userName"))
+            {
+                
+                return ele;
+            }
+        }).split("=")[1]
+        
+        let loginName=document.getElementById("loginName");
+        loginName.value=username;
+        let loginEmail=document.getElementById("loginEmail");
+        loginEmail.value=username+"@test.com";
+        </script>
     <!--Place DTM footer below this-->
     <script type="text/javascript">
         _satellite.pageBottom();
