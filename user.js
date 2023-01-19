@@ -1,5 +1,5 @@
-let username=undefined;
-let cookies=(document.cookie).split(";");
+var username=undefined;
+var cookies=(document.cookie).split(";");
 username = cookies.find((ele)=>{
     ele=ele.trim();
 
