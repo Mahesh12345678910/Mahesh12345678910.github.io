@@ -1,4 +1,4 @@
-        var digitalData = digitalData || {};
+      var digitalData = digitalData || {};
         digitalData = {
             page: {
                 pageInfo: {
@@ -23,7 +23,7 @@
                 user:{
                     userName:undefined,
                     userEmail:undefined,
-                    userStatus:undefined
+                    
                 }
 
         };
@@ -57,6 +57,9 @@
             }
         }
         digitalData.page.pageInfo.pageName=document.title;
+
+          
+
 
         
         

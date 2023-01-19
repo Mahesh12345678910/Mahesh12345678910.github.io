@@ -1,4 +1,3 @@
-
 let username=undefined;
 let cookies=(document.cookie).split(";");
 username = cookies.find((ele)=>{
@@ -11,9 +10,11 @@ username = cookies.find((ele)=>{
     }
 })
 
+
 if(username)
 {
     let auserLogin=document.getElementById("userLogin");
     auserLogin.href="./user.html";
-    auserLogin.innerText=username.split("=")[1];   
+    username=username.split("=")[1];
+    auserLogin.innerText=username;
 }
