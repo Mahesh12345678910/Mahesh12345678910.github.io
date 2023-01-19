@@ -40,20 +40,20 @@
         {
             if(i==0)
             {
-                digitalData.categories.primaryCategory="Geometrixx"
+                digitalData.page.categories.primaryCategory="Geometrixx"
             }
             else if(i==categories.length-1)
             {
 
                 let key="subCategory"+i;
                 let val=categories[i].split(".")[0];
-                digitalData.categories[key]=val;
+                digitalData.page.categories[key]=val;
             }
             else
             {
                 let key="subCategory"+i;
                 
-                digitalData.categories[key]=categories[i];   
+                digitalData.page.categories[key]=categories[i];   
             }
         }
         digitalData.page.pageInfo.pageName=document.title;
