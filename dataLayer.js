@@ -6,7 +6,6 @@
                     pageURL:"",
                     referrerURL:"",
                     server:""
-                }
                 },
                 categories :{
                     primaryCategory:undefined,
@@ -17,7 +16,10 @@
                 attributes:{
                     country:"INDIA",
                     date: new Date().toLocaleDateString()
+                }
                 },
+               
+               
                 user:{
                     userName:undefined,
                     userEmail:undefined,
