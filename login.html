@@ -175,8 +175,16 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
     <script src="./user.js"></script>
     <script>
         
-        digitalData.user.userName=username
+        if(username)
+        {
+            digitalData.user.userName=username
         digitalData.user.userEmail=username+"@test.com"
+        }
+        else
+        {
+            digitalData.user.userName=undefined
+        digitalData.user.userEmail=undefined
+        }
         
     </script>
     <!--Place DTM footer below this-->

@@ -235,8 +235,16 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     <script src="../../user.js"></script>
     <script>
         
-        digitalData.user.userName=username
+        if(username)
+        {
+            digitalData.user.userName=username
         digitalData.user.userEmail=username+"@test.com"
+        }
+        else
+        {
+            digitalData.user.userName=undefined
+        digitalData.user.userEmail=undefined
+        }
         
     </script>
     <!--Place DTM footer below this-->

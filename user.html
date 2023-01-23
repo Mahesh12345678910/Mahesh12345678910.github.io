@@ -196,8 +196,16 @@ window.location.href="./index.html";
 <script src="./user.js"></script>
 <script>
     
-    digitalData.user.userName=username
-    digitalData.user.userEmail=username+"@test.com"
+    if(username)
+        {
+            digitalData.user.userName=username
+        digitalData.user.userEmail=username+"@test.com"
+        }
+        else
+        {
+            digitalData.user.userName=undefined
+        digitalData.user.userEmail=undefined
+        }
     
 </script>
     <!--Place DTM footer below this-->
