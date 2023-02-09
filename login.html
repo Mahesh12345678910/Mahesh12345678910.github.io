@@ -19,7 +19,17 @@ function logIn() {
 
     document.cookie="userName="+username+";expires="+tdate.toUTCString();
 document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
-window.location.href="./index.html";
+
+let prevPage=document.referrer;
+if(prevPage.includes("https://mahesh12345678910.github.io/checkout/shoppingcart.html"))
+{
+    window.location.href="https://mahesh12345678910.github.io/checkout/shoppingcart.html";
+}
+else
+{
+    window.location.href="./index.html";
+}
+
 
 }
 </script>
