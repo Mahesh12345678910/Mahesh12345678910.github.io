@@ -263,16 +263,30 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     <script>
         
         if(username)
+    {
+        digitalData.user.userName=username
+    digitalData.user.userEmail=username+"@test.com"
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
         {
-            digitalData.user.userName=username
-        digitalData.user.userEmail=username+"@test.com"
+            digitalData.user.userID=obj.userID;
+            break;
         }
-        else
-        {
-            digitalData.user.userName=undefined
-        digitalData.user.userEmail=undefined
-        }
-    </script>
+    }
+
+    
+    }
+    else
+    {
+        digitalData.user.userName=undefined
+    digitalData.user.userEmail=undefined
+    digitalData.user.userID=undefined
+
+    }
+</script>
     <!--Place DTM footer below this-->
 
     <script type="text/javascript">

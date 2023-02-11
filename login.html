@@ -10,10 +10,16 @@
 	<script src="./dataLayer.js"></script>
     <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
 
-<script>
+
+    <script src="./GeometrixxUsers.js"></script>
+<script>    
+
 
 function logIn() {
     let username=document.getElementById("loginName").value;
+    let password=document.getElementById("loginPassword").value;
+    let status=false;
+
     let tdate=new Date();
     tdate.setTime(tdate.getTime()+(24*60*60*1000));
 
@@ -142,7 +148,7 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
                                         <tr>
                                             <td class="search_title">Password:</td>
                                             <td>
-                                                <input type="password" name="loginPassword" class="textinput" size="20">
+                                                <input type="password" name="loginPassword" id="loginPassword" class="textinput" size="20">
                                             </td>
                                         </tr>
 					</form>
@@ -185,17 +191,30 @@ document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged 
     <script src="./user.js"></script>
     <script>
         
-        if(username)
+            if(username)
         {
             digitalData.user.userName=username
         digitalData.user.userEmail=username+"@test.com"
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                digitalData.user.userID=obj.userID;
+                break;
+            }
+        }
+
+        
         }
         else
         {
             digitalData.user.userName=undefined
         digitalData.user.userEmail=undefined
+        digitalData.user.userID=undefined
+
         }
-        
     </script>
     <!--Place DTM footer below this-->
     <script type="text/javascript">
