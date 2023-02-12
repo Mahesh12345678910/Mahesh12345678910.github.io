@@ -23,18 +23,35 @@ function logIn() {
     let tdate=new Date();
     tdate.setTime(tdate.getTime()+(24*60*60*1000));
 
-    document.cookie="userName="+username+";expires="+tdate.toUTCString();
-document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
+    let l=GC_Users.length;
+    for(let i=0;i<l;i+=1)
+    {
+        if(GC_Users[i].userName==username && GC_Users[i].password==password)
+        {
+            document.cookie="userName="+username+";expires="+tdate.toUTCString();
+            document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
+            status=true
+            let prevPage=document.referrer;
+            if(prevPage.includes("https://mahesh12345678910.github.io/checkout/shoppingcart.html"))
+            {
+                window.location.href="https://mahesh12345678910.github.io/checkout/shoppingcart.html";
+            }
+            else
+            {
+                window.location.href="./index.html";
+            }
 
-let prevPage=document.referrer;
-if(prevPage.includes("https://mahesh12345678910.github.io/checkout/shoppingcart.html"))
-{
-    window.location.href="https://mahesh12345678910.github.io/checkout/shoppingcart.html";
-}
-else
-{
-    window.location.href="./index.html";
-}
+            break;
+
+        }
+
+    }
+    if(!status)
+    {
+        alert("Invalid username or password");
+    }
+
+ 
 
 
 }
@@ -43,6 +60,8 @@ else
 <script>
 function logOut() {
 document.getElementById("loginStatus").innerHTML = "Happy trails! You're logged out.";
+document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
 }
 
 </script>
