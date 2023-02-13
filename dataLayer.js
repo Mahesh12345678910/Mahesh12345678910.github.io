@@ -30,7 +30,7 @@
 
         };
         
-            digitalData.page.pageInfo.pageName=document.title;
+
         digitalData.page.pageInfo.pageURL=document.URL;
         digitalData.page.pageInfo.referrerURL=document.referrer;
         digitalData.page.pageInfo.server=window.location.hostname;
@@ -58,7 +58,46 @@
                 digitalData.page.categories[key]=categories[i];   
             }
         }
-        digitalData.page.pageInfo.pageName=document.title;
+
+        
+
+    digitalData.page.pageInfo.pageName = digitalData.page.attributes.country + ":" +digitalData.page.attributes.language ;
+
+
+    if(digitalData.page.categories.primaryCategory && digitalData.page.categories.primaryCategory.length>0)
+    {
+        digitalData.page.pageInfo.pageName += ":"+digitalData.page.categories.primaryCategory;
+    }
+    else
+    {
+        digitalData.page.pageInfo.pageName += ":na";
+    }
+    if(digitalData.page.categories.subCategory1 && digitalData.page.categories.subCategory1.length>0)
+    {
+        digitalData.page.pageInfo.pageName += ":"+digitalData.page.categories.subCategory1;
+    }
+    else
+    {
+        digitalData.page.pageInfo.pageName += ":na";
+    }
+    if(digitalData.page.categories.subCategory2 && digitalData.page.categories.subCategory2.length>0)
+    {
+        digitalData.page.pageInfo.pageName += ":"+digitalData.page.categories.subCategory2;
+    }
+    else
+    {
+        digitalData.page.pageInfo.pageName += ":na";
+    }
+    if(digitalData.page.categories.subCategory3 && digitalData.page.categories.subCategory3.length>0)
+    {
+        digitalData.page.pageInfo.pageName += ":"+digitalData.page.categories.subCategory3;
+    }
+    else
+    {
+        digitalData.page.pageInfo.pageName += ":na";
+    }
+//   +digitalData.page.categories.subCategory1 ? digitalData.page.categories.subCategory2 : "na" + digitalData.page.categories.subCategory3 ? digitalData.page.categories.subCategory3 : "na" ;
+
 
           
 
