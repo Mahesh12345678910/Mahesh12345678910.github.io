@@ -14,8 +14,9 @@
                     subCategory3 : undefined
                 },
                 attributes:{
-                    country:"INDIA",
-                    date: new Date().toLocaleDateString()
+                    country:"in",
+                    language : "en"
+
                 }
                 },
                
