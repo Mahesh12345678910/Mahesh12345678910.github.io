@@ -6,8 +6,9 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 pageInfo: {
                     pageName: "",
                     pageURL:"",
-                    referrerURL:"",
-                    server:""
+                    pageType :"",
+                    platform :"desktop Website"
+
                 },
                 categories :{
                     primaryCategory:undefined,
@@ -24,9 +25,11 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 event : "pageView",
                
                 user:{
-                    userName:undefined,
+                    
                     userEmail:undefined,
-                    userID : undefined
+                    userID : undefined,
+
+
                     
                 }
 
@@ -35,7 +38,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
 
         digitalData.page.pageInfo.pageURL=document.URL;
         digitalData.page.pageInfo.referrerURL=document.referrer;
-        digitalData.page.pageInfo.server=window.location.hostname;
+
+       
        
         let pageURL=document.URL;
         let urlobj=new URL(pageURL);
