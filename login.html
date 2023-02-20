@@ -221,19 +221,19 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
             let obj=GC_Users[i];
             if(obj.userName==username)
             {
-                digitalData.user.userID=obj.userID;
+                digitalData.user.userInfo.userID=obj.userID;
                 break;
             }
         }
-        digitalData.user.userInfo.userStaus="Logged In"
+        digitalData.user.userInfo.userStatus="Logged In"
         
         }
         else
         {
  
-        digitalData.user.userEmail=undefined
-        digitalData.user.userID=undefined
-        digitalData.user.userStatus="Not Logged In"
+        digitalData.user.userInfo.userEmail=undefined
+        digitalData.user.userInfo.userID=undefined
+        digitalData.user.userInfo.userStatus="Not Logged In"
 
 
         }

@@ -278,19 +278,19 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
             let obj=GC_Users[i];
             if(obj.userName==username)
             {
-                digitalData.user.userID=obj.userID;
+                digitalData.user.userInfo.userID=obj.userID;
                 break;
             }
         }
-        digitalData.user.userInfo.userStaus="Logged In"
+        digitalData.user.userInfo.userStatus="Logged In"
         
         }
         else
         {
  
-        digitalData.user.userEmail=undefined
-        digitalData.user.userID=undefined
-        digitalData.user.userStatus="Not Logged In"
+        digitalData.user.userInfo.userEmail=undefined
+        digitalData.user.userInfo.userID=undefined
+        digitalData.user.userInfo.userStatus="Not Logged In"
 
 
         }
