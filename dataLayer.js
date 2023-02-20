@@ -7,7 +7,7 @@ window.adobeDataLayer= window.adobeDataLayer || []
                     pageName: "",
                     pageURL:"",
                     pageType :"",
-                    platform :"desktop Website"
+                    
 
                 },
                 categories :{
@@ -18,7 +18,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 },
                 attributes:{
                     country:"in",
-                    language : "en"
+                    language : "en",
+                    platform :"desktop Website"
 
                 }
                 },
