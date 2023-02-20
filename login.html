@@ -210,10 +210,11 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
     <script src="./user.js"></script>
     <script>
         
-            if(username)
+        if(username)
         {
-            digitalData.user.userName=username
-        digitalData.user.userEmail=username+"@test.com"
+            
+        digitalData.user.userInfo.userEmail=username+"@test.com"
+        
         
         for(let i=0;i<GC_Users.length;i++)
         {
@@ -224,14 +225,16 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
                 break;
             }
         }
-
+        digitalData.user.userInfo.userStaus="Logged In"
         
         }
         else
         {
-            digitalData.user.userName=undefined
+ 
         digitalData.user.userEmail=undefined
         digitalData.user.userID=undefined
+        digitalData.user.userStatus="Not Logged In"
+
 
         }
     </script>
