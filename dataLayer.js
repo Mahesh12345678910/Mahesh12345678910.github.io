@@ -8,6 +8,7 @@ window.adobeDataLayer= window.adobeDataLayer || []
                     pageURL:"",
                     pageType :"",
                     
+                    
 
                 },
                 categories :{
@@ -19,7 +20,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 attributes:{
                     country:"in",
                     language : "en",
-                    platform :"desktop Website"
+                    platform :"desktop Website",
+                    siteType : "B2C"
 
                 },
                 error:{
