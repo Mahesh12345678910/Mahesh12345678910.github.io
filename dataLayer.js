@@ -32,6 +32,7 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 event : "pageView",
                
                 user:{
+                    
                     userInfo:{
 
                     userEmail:undefined,
