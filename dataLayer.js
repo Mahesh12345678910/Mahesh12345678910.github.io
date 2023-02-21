@@ -21,6 +21,10 @@ window.adobeDataLayer= window.adobeDataLayer || []
                     language : "en",
                     platform :"desktop Website"
 
+                },
+                error:{
+                    errorCode:"",
+                    errorDescription :""
                 }
                 },
                 event : "pageView",
@@ -37,13 +41,11 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 }
 
         };
-        
+ 
 
         digitalData.page.pageInfo.pageURL=document.URL;
         digitalData.page.pageInfo.referrerURL=document.referrer;
 
-       
-       
         let pageURL=document.URL;
         let urlobj=new URL(pageURL);
         let categories=urlobj.pathname.split("/");
