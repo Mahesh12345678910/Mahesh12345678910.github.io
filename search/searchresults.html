@@ -24,7 +24,7 @@
 
 
 
-
+<!-- 
     <script>
         var digitalData = digitalData || {};
         digitalData = {
@@ -36,6 +36,13 @@
                 searchTerm: searchTerm
             },
         };
+         -->
+<script src="./dataLayer.js"></script>
+
+    <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
+    
+
+
     </script>
 
 
@@ -242,9 +249,41 @@
          </span>
         </span>
     </div>
+
+    <script src="../user.js"></script>
+    <script>
+     if(username)
+        {
+            
+        digitalData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                digitalData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        digitalData.user.userInfo.userStatus="Logged In"
+        
+        }
+        else
+        {
+ 
+        digitalData.user.userInfo.userEmail=undefined
+        digitalData.user.userInfo.userID=undefined
+        digitalData.user.userInfo.userStatus="Not Logged In"
+
+
+        }
+</script>
     <!--End footer-->
     <!--Place DTM footer below this-->
     <script type="text/javascript">
+        digitalData.page.pageInfo.pageType="searchResults";
         _satellite.pageBottom();
     </script>
     <!--Place DTM footer above this-->
