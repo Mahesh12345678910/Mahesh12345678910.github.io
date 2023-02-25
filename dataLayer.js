@@ -29,6 +29,7 @@ window.adobeDataLayer= window.adobeDataLayer || []
                     errorDescription :""
                 }
                 },
+       
                 event : "pageView",
                
                 user:{
@@ -41,7 +42,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
                     }
 
                     
-                }
+                },
+                
 
         };
  
@@ -110,6 +112,47 @@ window.adobeDataLayer= window.adobeDataLayer || []
     {
         digitalData.page.pageInfo.pageName += ":na";
     }
+
+    let url=new URL(document.URL);
+    let searchParams=new URLSearchParams(url.search)
+    if(searchParams.get("cid") && searchParams.get("intcid"))
+    {
+
+         digitalData.campaign={
+                internal:{
+                    campaignName : "intcid",
+                    campaignValue : searchParams.get("intcid")
+                },
+                external:{
+                    campaignName : "cid",
+                    campaignValue :searchParams.get("cid")
+                }
+
+    }
+    }
+    else if(searchParams.get("intcid"))
+    {
+
+            digitalData.campaign={
+                    internal:{
+                    campaignName : "intcid",
+                    campaignValue : searchParams.get("intcid")
+                }
+            }
+            
+
+
+    }
+    else {
+        digitalData.campaign={
+                external:{
+            campaignName : "cid",
+            campaignValue : searchParams.get("cid")
+                }
+        }
+    }
+    
+
 
 window.adobeDataLayer.push(digitalData)
 //   +digitalData.page.categories.subCategory1 ? digitalData.page.categories.subCategory2 : "na" + digitalData.page.categories.subCategory3 ? digitalData.page.categories.subCategory3 : "na" ;
