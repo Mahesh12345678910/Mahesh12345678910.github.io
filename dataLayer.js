@@ -25,8 +25,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
 
                 },
                 error:{
-                    errorCode:"",
-                    errorDescription :""
+                    errorCode:undefined,
+                    errorDescription :undefined
                 }
                 },
        
