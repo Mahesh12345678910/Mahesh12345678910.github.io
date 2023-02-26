@@ -10,15 +10,29 @@
     <!--Place DTM header above this-->
 
     <script src="../../dataLayer.js"></script>
-
     <script>
+        window.adobeDataLayer=window.adobeDataLayer || [];
+        let data=JSON.stringify(digitalData);
+        let pageData=JSON.parse(data)
+
+        pageData.product={
+            productID: "101341",
+        productName: "Red Dress"
+                
+    }
+        pageData.event="pageView"
+        adobeDataLayer.push(pageData)
+
+    </script>
+
+    <!-- <script>
     console.log(digitalData);
     digitalData.product={
         productID: "101341",
         productName: "Red Dress"
                 
     }
-    </script>
+    </script> -->
     
     
         <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>

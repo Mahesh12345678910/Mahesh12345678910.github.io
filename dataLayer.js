@@ -1,5 +1,3 @@
-window.adobeDataLayer= window.adobeDataLayer || []
-      
       var digitalData = digitalData || {};
         digitalData = {
             page: {
@@ -24,14 +22,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
                     siteType : "B2C"
 
                 },
-                error:{
-                    errorCode:undefined,
-                    errorDescription :undefined
-                }
+            
                 },
-       
-                event : "pageView",
-               
                 user:{
                     
                     userInfo:{
@@ -145,7 +137,7 @@ window.adobeDataLayer= window.adobeDataLayer || []
 
 
     }
-    else {
+    else if(searchParams.get("cid")) {
         digitalData.campaign={
                 external:{
             campaignName : "cid",

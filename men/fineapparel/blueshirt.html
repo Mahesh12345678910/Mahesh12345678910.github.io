@@ -12,13 +12,27 @@
 
    <script src="../../dataLayer.js"></script>
    
-<script>
+   <script>
+    window.adobeDataLayer=window.adobeDataLayer || [];
+    let data=JSON.stringify(digitalData);
+    let pageData=JSON.parse(data)
+    pageData.event="pageView"
+    pageData.product={
+        productID: "201241",
+        productName: "Blue Shirt"
+    }
+    adobeDataLayer.push(pageData)
+
+</script>
+<!-- <script>
+
+    
     console.log(digitalData);
     digitalData.product={
         productID: "201241",
         productName: "Blue Shirt"
     }
-    </script>
+    </script> -->
     
     
 
