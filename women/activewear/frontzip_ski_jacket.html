@@ -12,8 +12,61 @@
     
     <script src="../../dataLayer.js"></script>
 
+
+    <script src="../../user.js"></script>
     
     <script>
+        window.adobeDataLayer=window.adobeDataLayer || [];
+        let data=JSON.stringify(digitalData);
+        let pageData=JSON.parse(data)
+        pageData.page.pageInfo.pageType="productDetail"
+        pageData.event="pageView"
+        pageData.product={
+            productID: "100244",
+        productName: "Front-Zip Ski Jacket"
+    }
+        if(username)
+        {
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                digitalData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+
+
+        adobeDataLayer.push(pageData)
+
+    </script>
+
+    
+    <!-- <script>
         window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
@@ -25,8 +78,8 @@
         pageData.event="pageView"
         adobeDataLayer.push(pageData)
 
-    </script>
-    
+    </script> -->
+
 <!-- <script>
 console.log(digitalData);
 digitalData.product={

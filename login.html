@@ -8,13 +8,50 @@
     <!--Place DTM header above this-->
     
 	<script src="./dataLayer.js"></script>
+    <script src="./user.js"></script>
 
     <script>
         window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
-
+        pageData.page.pageInfo.pageType="login"
         pageData.event="pageView"
+        if(username)
+        {
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                digitalData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+
+
         adobeDataLayer.push(pageData)
 
     </script>
@@ -230,42 +267,46 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
         <!--start footer--><span class="footer">Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.<span style="float: right"> <a href="sitemap.html">Site Map</a></span></span>
         <!--end footer-->
     </div>
-    <script src="./user.js"></script>
-    <script>
-        
+    
+    <!-- <script>
+    
         if(username)
-        {
-            
-        digitalData.user.userInfo.userEmail=username+"@test.com"
-        
-        
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
             {
-                digitalData.user.userInfo.userID=obj.userID;
-                break;
+                
+            digitalData.user.userInfo.userEmail=username+"@test.com"
+            
+            
+            for(let i=0;i<GC_Users.length;i++)
+            {
+                let obj=GC_Users[i];
+                if(obj.userName==username)
+                {
+                    digitalData.user.userInfo.userID=obj.userID;
+                    break;
+                }
             }
-        }
-        digitalData.user.userInfo.userStatus="Logged In"
-        
-        }
-        else
-        {
- 
-        digitalData.user.userInfo.userEmail=undefined
-        digitalData.user.userInfo.userID=undefined
-        digitalData.user.userInfo.userStatus="Not Logged In"
-
-
-        }
-    </script>
-    <!--Place DTM footer below this-->
-    <script type="text/javascript">
-        digitalData.page.pageInfo.pageType="login";
-        _satellite.pageBottom();
-    </script>
+            digitalData.user.userInfo.userStatus="Logged In"
+    
+            window.adobeDataLayer=window.adobeDataLayer ||[]
+            adobeDataLayer.push(digitalData)
+            
+            }
+            else
+            {
+     
+            digitalData.user.userInfo.userEmail=undefined
+            digitalData.user.userInfo.userID=undefined
+            digitalData.user.userInfo.userStatus="Not Logged In"
+            window.adobeDataLayer=window.adobeDataLayer ||[]
+            adobeDataLayer.push(digitalData)
+    
+    
+            }
+    </script> -->
+        <script type="text/javascript">
+           
+            _satellite.pageBottom();
+        </script>
     <!--Place DTM footer above this-->
 
 </body>

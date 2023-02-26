@@ -11,8 +11,58 @@
 
     
     <script src="../../dataLayer.js"></script>
-
+    <script src="../../user.js"></script>
     <script>
+        window.adobeDataLayer=window.adobeDataLayer || [];
+        let data=JSON.stringify(digitalData);
+        let pageData=JSON.parse(data)
+        pageData.page.pageInfo.pageType="productDetail"
+        pageData.event="pageView"
+        pageData.product={
+        productID: "101344",
+        productName: "Silk Dress"
+                
+    }
+        if(username)
+        {
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                digitalData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+
+
+        adobeDataLayer.push(pageData)
+
+    </script>
+    <!-- <script>
         window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
@@ -25,7 +75,7 @@
         pageData.event="pageView"
         adobeDataLayer.push(pageData)
 
-    </script>
+    </script> -->
     <!-- <script>
     console.log(digitalData);
     digitalData.product={
@@ -248,42 +298,45 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     </div>
     <!--End footer-->
     <script src="../../user.js"></script>
-    <script>
-        
+    <!-- <script>
+    
         if(username)
-        {
-            
-        digitalData.user.userInfo.userEmail=username+"@test.com"
-        
-        
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
             {
-                digitalData.user.userInfo.userID=obj.userID;
-                break;
+                
+            digitalData.user.userInfo.userEmail=username+"@test.com"
+            
+            
+            for(let i=0;i<GC_Users.length;i++)
+            {
+                let obj=GC_Users[i];
+                if(obj.userName==username)
+                {
+                    digitalData.user.userInfo.userID=obj.userID;
+                    break;
+                }
             }
-        }
-        digitalData.user.userInfo.userStatus="Logged In"
-        
-        }
-        else
-        {
- 
-        digitalData.user.userInfo.userEmail=undefined
-        digitalData.user.userInfo.userID=undefined
-        digitalData.user.userInfo.userStatus="Not Logged In"
-
-
-        }
-</script>
-    <!--Place DTM footer below this-->
-
-    <script type="text/javascript">
-        digitalData.page.pageInfo.pageType="productDetail";
-        _satellite.pageBottom();
-    </script>
+            digitalData.user.userInfo.userStatus="Logged In"
+    
+            window.adobeDataLayer=window.adobeDataLayer ||[]
+            adobeDataLayer.push(digitalData)
+            
+            }
+            else
+            {
+     
+            digitalData.user.userInfo.userEmail=undefined
+            digitalData.user.userInfo.userID=undefined
+            digitalData.user.userInfo.userStatus="Not Logged In"
+            window.adobeDataLayer=window.adobeDataLayer ||[]
+            adobeDataLayer.push(digitalData)
+    
+    
+            }
+    </script> -->
+        <script type="text/javascript">
+         
+            _satellite.pageBottom();
+        </script>
 
     <!--Place DTM footer above this-->
 
