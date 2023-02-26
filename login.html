@@ -35,10 +35,10 @@ function logIn() {
             
             window.adobeDataLayer= window.adobeDataLayer || []
             
-            let strdata=JSON.stringify(digitalData)
-            let logindata=JSON.parse(strdata)
-            logindata.event="loginSuccess"
-            window.adobeDataLayer.push(logindata)
+            // let strdata=JSON.stringify(digitalData)
+            // let logindata=JSON.parse(strdata)
+            digitalData.event="loginSuccess"
+            window.adobeDataLayer.push(digitalData)
 
             console.log(adobeDataLayer);
             if(prevPage.includes("https://mahesh12345678910.github.io/checkout/shoppingcart.html"))

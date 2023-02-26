@@ -309,6 +309,7 @@
                 e.preventDefault();
                 console.log(e.target.innerHTML)
                 if(digitalData.search){
+                    digitalData.event="searchResultClickThrough"
                     digitalData.search.clickedTitle=e.target.innerHTML
                     digitalData.search.searchRank=count;
                    
@@ -319,6 +320,7 @@
     console.log(count)
     if(digitalData.search)
     {
+        digitalData.event="siteSearch"
         digitalData.search.numberOfResults=count;
     }
 
