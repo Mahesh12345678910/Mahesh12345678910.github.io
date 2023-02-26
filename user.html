@@ -10,21 +10,57 @@
 	<script src="./dataLayer.js">
         
     </script>
+<script src="./user.js"></script>
 
-    
+<script src="./GeometrixxUsers.js"></script>
 <script>
     window.adobeDataLayer=window.adobeDataLayer || [];
     let data=JSON.stringify(digitalData);
     let pageData=JSON.parse(data)
-
+    pageData.page.pageInfo.pageType="user"
     pageData.event="pageView"
+    if(username)
+    {
+        
+    pageData.user.userInfo.userEmail=username+"@test.com"
+    
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
+        {
+            digitalData.user.userInfo.userID=obj.userID;
+            break;
+        }
+    }
+    pageData.user.userInfo.userStatus="Logged In"
+
+    
+  
+    
+    }
+    else
+    {
+
+    pageData.user.userInfo.userEmail=undefined
+    pageData.user.userInfo.userID=undefined
+    pageData.user.userInfo.userStatus="Not Logged In"
+
+    
+
+
+    }
+
+
+
+
     adobeDataLayer.push(pageData)
 
 </script>
+
 	<script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
 
-
-    <script src="./GeometrixxUsers.js"></script>
 
 <script>
 function logOut() {
@@ -204,8 +240,8 @@ window.location.href="./index.html";
         loginEmail.value=username+"@test.com";
         </script>
 
-<script src="./user.js"></script>
-<script>
+
+<!-- <script>
         
         if(username)
         {
@@ -234,7 +270,7 @@ window.location.href="./index.html";
 
 
         }
-</script>
+</script> -->
     <!--Place DTM footer below this-->
     <script type="text/javascript">
         _satellite.pageBottom();
