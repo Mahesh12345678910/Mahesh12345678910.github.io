@@ -32,6 +32,15 @@ function logIn() {
             document.getElementById("loginStatus").innerHTML = "Welcome to Geometrixx! You're logged in!";
             status=true
             let prevPage=document.referrer;
+            
+            window.adobeDataLayer= window.adobeDataLayer || []
+            
+            let strdata=JSON.stringify(digitalData)
+            let logindata=JSON.parse(strdata)
+            logindata.event="loginSuccess"
+            window.adobeDataLayer.push(logindata)
+
+            console.log(adobeDataLayer);
             if(prevPage.includes("https://mahesh12345678910.github.io/checkout/shoppingcart.html"))
             {
                 window.location.href="https://mahesh12345678910.github.io/checkout/shoppingcart.html";
@@ -40,6 +49,8 @@ function logIn() {
             {
                 window.location.href="./index.html";
             }
+            
+           
 
             break;
 

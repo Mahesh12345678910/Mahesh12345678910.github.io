@@ -304,6 +304,16 @@
             table_row.appendChild(table_data)
             prod_data.appendChild(table_row)
             count++;
+            hlink.onclick=function(e)
+            {
+                e.preventDefault();
+                console.log(e.target.innerHTML)
+                if(digitalData.search){
+                    digitalData.search.clickedTitle=e.target.innerHTML
+                    digitalData.search.searchRank=count;
+                   
+                }
+            }
         }
     }
     console.log(count)
@@ -311,6 +321,8 @@
     {
         digitalData.search.numberOfResults=count;
     }
+
+
 
 </script>
     <!--End footer-->
