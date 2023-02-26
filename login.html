@@ -305,7 +305,18 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
             }
     </script> -->
         <script type="text/javascript">
-           
+                 if(username)
+{
+    
+    let auserLogin=document.getElementById("userLogin");
+    if(auserLogin)
+    {
+        console.log(username);
+    auserLogin.href="./user.html";
+ 
+    auserLogin.innerText=username;
+    }
+}
             _satellite.pageBottom();
         </script>
     <!--Place DTM footer above this-->

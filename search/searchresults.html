@@ -389,7 +389,18 @@
     End footer -->
     <!-- Place DTM footer below this -->
     <script type="text/javascript">
+          if(username)
+{
     
+    let auserLogin=document.getElementById("userLogin");
+    if(auserLogin)
+    {
+        console.log(username);
+    auserLogin.href="./user.html";
+ 
+    auserLogin.innerText=username;
+    }
+}
         _satellite.pageBottom();
     </script>
     <!--Place DTM footer above this-->

@@ -326,7 +326,18 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     <!--Place DTM footer below this-->
 
     <script type="text/javascript">
-      
+              if(username)
+{
+    
+    let auserLogin=document.getElementById("userLogin");
+    if(auserLogin)
+    {
+        console.log(username);
+    auserLogin.href="./user.html";
+ 
+    auserLogin.innerText=username;
+    }
+}
         _satellite.pageBottom();
     </script>
 
