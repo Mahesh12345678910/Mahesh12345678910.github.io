@@ -273,6 +273,17 @@ window.location.href="./index.html";
 </script> -->
     <!--Place DTM footer below this-->
     <script type="text/javascript">
+        if(username)
+{
+    username=username.split("=")[1];
+    let auserLogin=document.getElementById("userLogin");
+    if(auserLogin)
+    {
+    auserLogin.href="./user.html";
+ 
+    auserLogin.innerText=username;
+    }
+}
         _satellite.pageBottom();
     </script>
     <!--Place DTM footer above this-->

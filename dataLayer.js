@@ -158,7 +158,7 @@
     
 
 
-window.adobeDataLayer.push(digitalData)
+// window.adobeDataLayer.push(digitalData)
 //   +digitalData.page.categories.subCategory1 ? digitalData.page.categories.subCategory2 : "na" + digitalData.page.categories.subCategory3 ? digitalData.page.categories.subCategory3 : "na" ;
 
 

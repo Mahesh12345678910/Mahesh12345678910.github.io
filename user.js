@@ -54,12 +54,5 @@ username = cookies.find((ele)=>{
 console.log("User "+username)
 
 
-if(username)
-{
-    username=username.split("=")[1];
-    let auserLogin=document.getElementById("userLogin");
-    auserLogin.href="./user.html";
- 
-    auserLogin.innerText=username;
-}
+
 
