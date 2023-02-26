@@ -115,6 +115,8 @@ window.adobeDataLayer= window.adobeDataLayer || []
 
     let url=new URL(document.URL);
     let searchParams=new URLSearchParams(url.search)
+
+
     if(searchParams.get("cid") && searchParams.get("intcid"))
     {
 
@@ -151,6 +153,16 @@ window.adobeDataLayer= window.adobeDataLayer || []
                 }
         }
     }
+
+    if(searchParams.get("q"))
+    {
+        let searchTerm=decodeURI(searchParams.get("q"));
+        digitalData.search={
+            keyword:searchTerm
+        }
+    }
+
+
     
 
 

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 
+
 <head>
 
     <!--Place DTM header below this-->
@@ -10,6 +11,7 @@
 
 
     <!--Place DTM header above this-->
+    <script src="./search.js"></script>
 
     <script type="text/javascript"></script>
     <script type="text/javascript">
@@ -39,6 +41,7 @@
             },
         };
          -->
+      
 <script src="./dataLayer.js"></script>
 
     <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
@@ -69,6 +72,14 @@
         @import url(https://ats-sb.adobe.com/jjsite/include/css/menu.css);
         @import url(https://ats-sb.adobe.com/jjsite/include/css/searchfield.css);
     </style>
+    <style>
+        #wrapper{
+           
+            width: 800px;
+            height : 800px;
+        }
+       
+    </style>
     <link rel="shortcut icon" href="https://ats-sb.adobe.com/jjsite/include/images/jj1.ico">
 </head>
 
@@ -95,10 +106,11 @@
                     <a href="../checkout/shipping1.html">checkout</a>
                 </div>
             </div>
+            
             <!--end search box-->
             <!--end logo and head-->
             <!--start top nav-->
-            <table width=800>
+            <table>
                 <tr>
                     <div class="head_tabs_bar">
                         <div id="menu">
@@ -193,64 +205,44 @@
             <!--start page content-->
             <!---------------------->
             <br />
-            <table border="0" height="250" width="800">
+            
+            <div>
+
+ 
+            <table border="0">
                 <!---Form Start--->
-                <td>
-                    <table>
-                        <tr>
-                            <td>
+                
                                 <span style="font:20px Verdana;color:#F05A28;">Your search results for 
                            <span id="term" style="color:#0000ff;font-style:italic;"></span> are listed below
                                 </span>
-                            </td>
-                        </tr>
+                            
+                        
                         <script type="text/javascript">
                             document.getElementById("term").innerHTML = searchTerm;
                         </script>
-                        <div style="font:14px Verdana;color:cc9900;">
-                            <tr>
-                                <td>
-                                    <span>
-                              <a href="../women/activewear/fur_trim_ski_jacket.html">
-                              <img src="https://ats-sb.adobe.com/jjsite/include/images/active2.jpg" height="100px" border="0" />
-                              </span>
-                                    <span>Fur Trim Ski Jacket
-                              </a>
-                              </span>
-                                    <br />
-                                    <br />
-                                    <span>
-                              <a href="../women/activewear/waist_puffer_jacket.html">
-                              <img src="https://ats-sb.adobe.com/jjsite/include/images/active1.jpg" height="100px" border="0" />
-                              </span>
-                                    <span>Tie-Waist Puffer Jacket
-                              </a>
-                              </span>
-                                    <br />
-                                    <br />
-                                    <span>
-                              <a href="../women/activewear/frontzip_ski_jacket.html">
-                              <img src="https://ats-sb.adobe.com/jjsite/include/images/active3.jpg" height="100px" border="0" />
-                              </span>
-                                    <span>Zip-Front Ski Jacket
-                              </a>
-                              </span>
-                                </td>
-                            </tr>
+                        <div  id= "prod_data" style="font:14px Verdana;color:cc9900;">
+                           
                         </div>
-                    </table>
+                    
                 </td>
             </table>
-            <!---Form End--->
         </div>
-        <!--start footer-->
-        <span class="footer">
-         Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
-         <span style="float: right">
-         <a href="../sitemap.html">Site Map</a>
-         </span>
-        </span>
-    </div>
+        </div>
+        <div id="footer">
+              
+        
+            <span class="footer">
+                Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
+                <span style="float: right">
+                <a href="../sitemap.html">Site Map</a>
+                </span>
+               </span>
+
+      
+        </div>
+     
+       
+    
 
     <script src="../user.js"></script>
     <script>
@@ -281,6 +273,45 @@
 
 
         }
+</script>
+<script>
+    let l=GC_Prods.length
+    let prod_data=document.getElementById("prod_data")
+    
+    let count=0;
+    for(let i=0;i<l;i++)
+    {
+        let prod=GC_Prods[i];
+        let name=(prod.prod_name).toLowerCase();
+        if(name.includes(searchTerm))
+        {
+            let product_span=document.createElement("span");
+            let hlink=document.createElement("a");
+            hlink.href=prod.path;
+            hlink.innerHTML=prod.prod_name
+            let pimg=document.createElement("img")
+            pimg.src=prod.src;
+            pimg.setAttribute("height","100px")
+            pimg.border="0";
+            
+            let table_row=document.createElement("tr")
+            let table_data=document.createElement("td");
+            table_data.appendChild(pimg)
+            table_data.appendChild(hlink)
+
+
+
+            table_row.appendChild(table_data)
+            prod_data.appendChild(table_row)
+            count++;
+        }
+    }
+    console.log(count)
+    if(digitalData.search)
+    {
+        digitalData.search.numberOfResults=count;
+    }
+
 </script>
     <!--End footer-->
     <!--Place DTM footer below this-->
