@@ -85,6 +85,7 @@ function logIn() {
             
             let data=JSON.stringify(digitalData)
             let logindata=JSON.parse(data)
+            logindata.page.pageInfo.pageType="login"
 
 
             logindata.event="loginSuccess"
