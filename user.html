@@ -223,9 +223,9 @@ window.location.href="./index.html";
         <!--end footer-->
     </div>
     <script>
-        let username=undefined;
+        let username1=undefined;
         let cookies=(document.cookie).split(";");
-        username = cookies.find((ele)=>{
+        username1 = cookies.find((ele)=>{
             ele=ele.trim();
         
             if(ele.startsWith("userName"))
@@ -236,9 +236,9 @@ window.location.href="./index.html";
         }).split("=")[1]
         
         let loginName=document.getElementById("loginName");
-        loginName.value=username;
+        loginName.value=username1;
         let loginEmail=document.getElementById("loginEmail");
-        loginEmail.value=username+"@test.com";
+        loginEmail.value=username1+"@test.com";
         </script>
 
 
