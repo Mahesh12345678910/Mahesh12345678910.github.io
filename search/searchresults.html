@@ -397,6 +397,8 @@
         let prod_data=document.getElementById("prod_data")
         // console.log(searchTerm);
         let count=0;
+
+        let resarr=[]
         for(let i=0;i<l;i++)
         {
             let prod=GC_Prods[i];
@@ -406,39 +408,14 @@
            
             if(name.includes(searchTerm))
             {
-                console.log("entered Search IF");
-                let product_span=document.createElement("span");
-                let hlink=document.createElement("a");
-                hlink.href=prod.path;
-                hlink.innerHTML=prod.prod_name
-                let pimg=document.createElement("img")
-                pimg.src=prod.src;
-                pimg.setAttribute("height","100px")
-                pimg.border="0";
+                resarr.push(prod);
                 
-                let table_row=document.createElement("tr")
-                let table_data=document.createElement("td");
-                table_data.appendChild(pimg)
-                table_data.appendChild(hlink)
-    
-    
-    
-                table_row.appendChild(table_data)
-                prod_data.appendChild(table_row)
+                
                 count++;
-                // hlink.onclick=function(e)
-                // {
-                //     e.preventDefault();
-                //     console.log(e.target.innerHTML)
-                //     if(digitalData.search){
-                //         digitalData.event="searchResultClickThrough"
-                //         digitalData.search.clickedTitle=e.target.innerHTML
-                //         digitalData.search.searchRank=count;
-                       
-                //     }
-                // }
             }
+            
         }
+
         console.log(count)
 
         window.adobeDataLayer= window.adobeDataLayer || []
@@ -497,7 +474,98 @@
         // }
         adobeDataLayer.push(pageData)
     
+        //SEARCH RESULT CLICKTHROUGH
+
+    let l1=resarr.length;
+    for(let i=0;i<l1;i++)
+    {
+        let product_span=document.createElement("span");
+                let hlink=document.createElement("a");
+                hlink.href=resarr[i].path;
+                hlink.innerHTML=resarr[i].prod_name
+                let pimg=document.createElement("img")
+                pimg.src=resarr[i].src;
+                pimg.setAttribute("height","100px")
+                pimg.border="0";
+                
+                let table_row=document.createElement("tr")
+                let table_data=document.createElement("td");
+                table_data.appendChild(pimg)
+                table_data.appendChild(hlink)
     
+    
+    
+                table_row.appendChild(table_data)
+                prod_data.appendChild(table_row)
+                
+                hlink.onclick=function(e)
+                {
+                    e.preventDefault();
+                    console.log(e.target.innerHTML)
+                    window.adobeDataLayer= window.adobeDataLayer || []
+            
+            data=JSON.stringify(digitalData)
+            pageData=JSON.parse(data)
+            pageData.page.pageInfo.pageType="searchResults"
+
+            if(username)
+        {
+            username=username.split("=")[1]
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let j=0;j<GC_Users.length;j++)
+        {
+            let obj=GC_Users[j];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+            pageData.event="searchResultClickThrough"
+            
+
+            pageData.search={
+                "searchTerm" : searchTerm,
+                "searchRank" : i+1,
+                "clickedTitle" : e.target.innerText
+           }
+
+           adobeDataLayer.push(pageData)
+
+           window.location.href=e.target.href;
+
+
+                    // if(digitalData.search){
+                    //     digitalData.event="searchResultClickThrough"
+                    //     digitalData.search.clickedTitle=e.target.innerHTML
+                    //     digitalData.search.searchRank=count;
+                       
+                    // }
+                }
+    
+    }
     
     </script>
 
