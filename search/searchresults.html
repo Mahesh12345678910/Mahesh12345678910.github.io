@@ -333,6 +333,7 @@
 
         }
 </script>
+
 <script>
     let l=GC_Prods.length
     let prod_data=document.getElementById("prod_data")
@@ -388,6 +389,118 @@
 </script>
     End footer -->
     <!-- Place DTM footer below this -->
+
+
+    <script type="text/javascript">
+        let l=GC_Prods.length
+        // console.log(GC_Prods);
+        let prod_data=document.getElementById("prod_data")
+        // console.log(searchTerm);
+        let count=0;
+        for(let i=0;i<l;i++)
+        {
+            let prod=GC_Prods[i];
+            let name=(prod.prod_name).toLowerCase();
+            console.log(name , searchTerm);
+            console.log(name.includes(searchTerm));
+           
+            if(name.includes(searchTerm))
+            {
+                console.log("entered Search IF");
+                let product_span=document.createElement("span");
+                let hlink=document.createElement("a");
+                hlink.href=prod.path;
+                hlink.innerHTML=prod.prod_name
+                let pimg=document.createElement("img")
+                pimg.src=prod.src;
+                pimg.setAttribute("height","100px")
+                pimg.border="0";
+                
+                let table_row=document.createElement("tr")
+                let table_data=document.createElement("td");
+                table_data.appendChild(pimg)
+                table_data.appendChild(hlink)
+    
+    
+    
+                table_row.appendChild(table_data)
+                prod_data.appendChild(table_row)
+                count++;
+                // hlink.onclick=function(e)
+                // {
+                //     e.preventDefault();
+                //     console.log(e.target.innerHTML)
+                //     if(digitalData.search){
+                //         digitalData.event="searchResultClickThrough"
+                //         digitalData.search.clickedTitle=e.target.innerHTML
+                //         digitalData.search.searchRank=count;
+                       
+                //     }
+                // }
+            }
+        }
+        console.log(count)
+
+        window.adobeDataLayer= window.adobeDataLayer || []
+            
+            data=JSON.stringify(digitalData)
+            pageData=JSON.parse(data)
+            pageData.page.pageInfo.pageType="searchResults"
+
+            if(username)
+        {
+            username=username.split("=")[1]
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+            pageData.event="siteSearch"
+
+           pageData.search={
+                "searchTerm" : searchTerm,
+                "numberOfResults" : count
+           }
+
+
+        // if(digitalData.search)
+        // {
+        //     digitalData.event="siteSearch"
+        //     digitalData.search.numberOfResults=count;
+        // }
+        adobeDataLayer.push(pageData)
+    
+    
+    
+    </script>
+
     <script type="text/javascript">
           if(username)
 {

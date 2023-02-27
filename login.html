@@ -87,6 +87,40 @@ function logIn() {
             let logindata=JSON.parse(data)
             logindata.page.pageInfo.pageType="login"
 
+            if(username)
+        {
+            username=username.split("=")[1]
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
 
             logindata.event="loginSuccess"
             adobeDataLayer.push(logindata)
