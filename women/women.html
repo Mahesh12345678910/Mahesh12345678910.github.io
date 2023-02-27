@@ -359,6 +359,80 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     
             }
     </script> -->
+
+    <script>
+        document.body.onclick=function(e)
+        {
+            e.preventDefault();
+            // console.log(e.target.tagName.toLowerCase())
+            let tagName=e.target.tagName
+            if(tagName =="BUTTON" || tagName=='A')
+            {
+                console.log(tagName.toLowerCase());
+                
+            window.adobeDataLayer=window.adobeDataLayer || [];
+            let data=JSON.stringify(digitalData);
+            let pageData=JSON.parse(data)
+            pageData.page.pageInfo.pageType="home"
+            pageData.event="customLinkClick"
+            if(username)
+            {
+                username=username.split("=")[1];
+                console.log(username);
+                
+            pageData.user.userInfo.userEmail=username+"@test.com"
+            
+            
+            for(let i=0;i<GC_Users.length;i++)
+            {
+                let obj=GC_Users[i];
+                if(obj.userName==username)
+                {
+                    pageData.user.userInfo.userID=obj.userID;
+                    break;
+                }
+            }
+            pageData.user.userInfo.userStatus="Logged In"
+    
+            
+          
+            
+            }
+            else
+            {
+     
+            pageData.user.userInfo.userEmail=undefined
+            pageData.user.userInfo.userID=undefined
+            pageData.user.userInfo.userStatus="Not Logged In"
+        
+            }
+    
+            let ctaType=undefined
+            if(e.target.tagName.toLowerCase()=="button")
+            {
+                ctaType="button"
+            }
+            else
+            {
+                ctaType="link"
+            }
+    
+            pageData.customLinkClick={
+                "customLinkText" : e.target.innerText,
+                "customLinkType" : ctaType
+    
+            }
+    
+    
+            adobeDataLayer.push(pageData)
+            console.log(adobeDataLayer);
+            }
+    
+        }
+    </script>
+    
+
+
         <script type="text/javascript">
                  if(username)
 {
