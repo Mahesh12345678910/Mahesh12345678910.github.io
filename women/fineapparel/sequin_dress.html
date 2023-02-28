@@ -17,7 +17,7 @@
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
         pageData.page.pageInfo.pageType="productDetail"
-        pageData.event="pageView"
+        pageData.event="product-view"
        
         if(username)
         {
@@ -52,6 +52,14 @@
 
         }
 
+        pageData.commerce=[{
+                    "sku" : "101333",
+                    "name" : "Sequin Dress",
+                    "category" : "Fine Apparel"
+        
+                }
+            
+            ]
 
 
 
@@ -393,7 +401,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
             
                 }
             </script>
-              <script>
+              <!-- <script>
                 window.adobeDataLayer=window.adobeDataLayer || [];
                 data=JSON.stringify(digitalData);
                 pageData=JSON.parse(data)
@@ -432,14 +440,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         
         
                 }
-                pageData.commerce=[{
-                    "sku" : "101333",
-                    "name" : "Sequin Dress",
-                    "category" : "Fine Apparel"
-        
-                }
-            
-            ]
+               
         
         
         
@@ -448,7 +449,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         
             </script>
 
-<script>
+<script> -->
     function fun()
     {
         simpleCart.add('name=Sequin Dress','price=4250.00','image=https://ats-sb.adobe.com/jjsite/include/sequin_dress.jpg');

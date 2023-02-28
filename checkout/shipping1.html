@@ -3,6 +3,61 @@
 
 <head>
 
+    <script src="../dataLayer.js"></script>
+    <script src="../user.js"></script>
+    <script src="../GeometrixxUsers.js"></script>
+    <script src="../search/search.js"></script>
+
+    <script>
+        console.log("UUSERNAME",username);
+        window.adobeDataLayer=window.adobeDataLayer || [];
+        let data=JSON.stringify(digitalData);
+        let pageData=JSON.parse(data)
+        pageData.page.pageInfo.pageType="payment"
+        pageData.event="pageView"
+        if(username)
+        {
+            username=username.split("=")[1];
+            console.log(username);
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+
+
+        adobeDataLayer.push(pageData)
+
+    </script>
+
+
     <!--Place DTM header below this-->
 
 

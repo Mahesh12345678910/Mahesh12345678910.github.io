@@ -17,11 +17,8 @@
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
         pageData.page.pageInfo.pageType="productDetail"
-        pageData.event="pageView"
-        pageData.product={
-            productID: "201244",
-        productName: "French Cuff Shirt"
-        }
+        pageData.event="product-view"
+       
         if(username)
         {
             username=username.split("=")[1];
@@ -55,7 +52,16 @@
 
         }
 
+        pageData.commerce=[{
+        "sku" : "201244",
+        "name" : "French Cuff Shirt",
+        "category" : "FineApparel"
 
+    }
+  
+    
+
+]
 
 
         adobeDataLayer.push(pageData)
@@ -410,7 +416,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         }
     </script>
     
-    <script>
+    <!-- <script>
         window.adobeDataLayer=window.adobeDataLayer || [];
         data=JSON.stringify(digitalData);
         pageData=JSON.parse(data)
@@ -450,23 +456,14 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
 
         }
-        pageData.commerce=[{
-        "sku" : "201244",
-        "name" : "French Cuff Shirt",
-        "category" : "FineApparel"
-
-    }
-  
-    
-
-]
+     
 
 
 
 
         adobeDataLayer.push(pageData)
 
-    </script>
+    </script> -->
 <script>
        
     function fun()
