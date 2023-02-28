@@ -272,7 +272,7 @@ digitalData.product={
                 <p>
                     <span class="cart">
 <form action="../../checkout/shoppingcart.html">
-<button type=submit onclick="simpleCart.add('name=Hooded Sweater','price=450.00','image=https://ats-sb.adobe.com/jjsite/include/man-active2.jpg');" name="sku" value="200233" class="button add-to-cart">ADD TO CART</button>
+<button type=submit onclick="fun()" name="sku" value="200233" class="button add-to-cart">ADD TO CART</button>
 </form>
 </span>
                     <p />
@@ -452,6 +452,72 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         adobeDataLayer.push(pageData)
 
     </script>
+
+<script>
+       
+    function fun()
+    {
+
+        simpleCart.add('name=Hooded Sweater','price=450.00','image=https://ats-sb.adobe.com/jjsite/include/man-active2.jpg');
+       // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
+    
+        window.adobeDataLayer=window.adobeDataLayer || [];
+    let data=JSON.stringify(digitalData);
+    let pageData=JSON.parse(data)
+    pageData.page.pageInfo.pageType="productDetail"
+    pageData.event="cart-add"
+  
+    if(username)
+    {
+        username=username.split("=")[1];
+        
+    pageData.user.userInfo.userEmail=username+"@test.com"
+    
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
+        {
+            pageData.user.userInfo.userID=obj.userID;
+            break;
+        }
+    }
+    pageData.user.userInfo.userStatus="Logged In"
+
+    
+  
+    
+    }
+    else
+    {
+
+    pageData.user.userInfo.userEmail=undefined
+    pageData.user.userInfo.userID=undefined
+    pageData.user.userInfo.userStatus="Not Logged In"
+
+    
+
+
+    }
+    pageData.commerce=[{
+    "sku" : "200233",
+    "name" : "Hooded Sweater",
+    "category" : "Activewear"
+
+}]
+
+
+
+
+    adobeDataLayer.push(pageData)
+
+    
+    console.log(adobeDataLayer);
+    console.log("debug point");
+    
+    }
+</script>
 
     <script type="text/javascript">
               if(username)

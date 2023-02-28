@@ -7,6 +7,7 @@
     <script src="../dataLayer.js"></script>
     <script src="../user.js"></script>
     <script src="../GeometrixxUsers.js"></script>
+    <script src="../search/search.js"></script>
 
     <script>
         window.adobeDataLayer=window.adobeDataLayer || [];
@@ -102,7 +103,47 @@
 
     <script src="../dataLayer.js"></script>
     <script>
-        digitalData.products=[];
+
+window.adobeDataLayer=window.adobeDataLayer || [];
+        data=JSON.stringify(digitalData);
+        pageData=JSON.parse(data)
+        pageData.page.pageInfo.pageType="home"
+        pageData.event="cart-view"
+        if(username)
+        {
+            username=username.split("=")[1];
+            console.log(username);
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+        pageData.commerce=[]
         let prodString=decodeURI(readCookie("simpleCart"));
 
         let prods=prodString.split("++");
@@ -111,16 +152,41 @@
         {
         
             let prodParams=prods[i].split("||");
+            console.log(prodParams);
+            let prod_name=prodParams[1].split("=")[1]
+            let sku=undefined
+                if(prod_name)
+                {
+                    let Allprods=GC_Prods
+                    let l1=Allprods.length;
+                    for(let j=0;j<l1;j++)
+                    {
+                        let s_prod=Allprods[j];
+                        let s_prod_name=s_prod.prod_name
+
+                        if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
+                        {
+                            sku=s_prod.prod_id;
+                        }
+                    }
+                }
             let prodObj={
                 "name" : prodParams[1].split("=")[1],
                 "price" : prodParams[2].split("=")[1],
-                "quantity" : prodParams[4].split("=")[1]
+                "quantity" : prodParams[3].split("=")[1],
+                "sku" : sku
 
             }
-            digitalData.products.push(prodObj)
+            pageData.commerce.push(prodObj)
         }
         console.log("HII "+prods)
- 
+
+
+
+
+
+        adobeDataLayer.push(pageData)
+        
     </script>
     <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
 
