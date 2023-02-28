@@ -19,13 +19,7 @@
         pageData.page.pageInfo.pageType="productDetail"
         pageData.event="pageView"
         
-            pageData.product={
-                productID: "101341",
-        productName: "Red Dress"
-                
-    
-                
-    }
+       
         if(username)
         {
             username=username.split("=")[1];
@@ -410,7 +404,61 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     }
 </script>
 
+<script>
+    window.adobeDataLayer=window.adobeDataLayer || [];
+    data=JSON.stringify(digitalData);
+    pageData=JSON.parse(data)
+    pageData.page.pageInfo.pageType="productDetail"
+    pageData.event="product-view"
 
+    if(username)
+    {
+        username=username.split("=")[1];
+    pageData.user.userInfo.userEmail=username+"@test.com"
+    
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
+        {
+            pageData.user.userInfo.userID=obj.userID;
+            break;
+        }
+    }
+    pageData.user.userInfo.userStatus="Logged In"
+
+    
+  
+    
+    }
+    else
+    {
+
+    pageData.user.userInfo.userEmail=undefined
+    pageData.user.userInfo.userID=undefined
+    pageData.user.userInfo.userStatus="Not Logged In"
+
+    
+
+
+    }
+    pageData.commerce=[{
+        "sku" : "101341",
+        "name" : "Red Dress",
+        "category" : "Fine Apparel"
+
+    }
+ 
+
+]
+
+
+
+
+    adobeDataLayer.push(pageData)
+
+</script>
 
 
     <script type="text/javascript">

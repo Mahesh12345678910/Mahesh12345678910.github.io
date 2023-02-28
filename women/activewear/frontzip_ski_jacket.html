@@ -22,10 +22,7 @@
         let pageData=JSON.parse(data)
         pageData.page.pageInfo.pageType="productDetail"
         pageData.event="pageView"
-        pageData.product={
-            productID: "100244",
-        productName: "Front-Zip Ski Jacket"
-    }
+      
         if(username)
         {
             username=username.split("=")[1];   
@@ -404,7 +401,61 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
     }
 </script>
+<script>
+    window.adobeDataLayer=window.adobeDataLayer || [];
+    data=JSON.stringify(digitalData);
+    pageData=JSON.parse(data)
+    pageData.page.pageInfo.pageType="productDetail"
+    pageData.event="product-view"
 
+    if(username)
+    {
+        username=username.split("=")[1];
+    pageData.user.userInfo.userEmail=username+"@test.com"
+    
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
+        {
+            pageData.user.userInfo.userID=obj.userID;
+            break;
+        }
+    }
+    pageData.user.userInfo.userStatus="Logged In"
+
+    
+  
+    
+    }
+    else
+    {
+
+    pageData.user.userInfo.userEmail=undefined
+    pageData.user.userInfo.userID=undefined
+    pageData.user.userInfo.userStatus="Not Logged In"
+
+    
+
+
+    }
+    pageData.commerce=[{
+        "sku" : "100244",
+        "name" : "Front-Zip Ski Jacket",
+        "category" : "Activewear"
+
+    }
+    
+
+]
+
+
+
+
+    adobeDataLayer.push(pageData)
+
+</script>
     <!--Place DTM footer below this-->
 
     <script type="text/javascript">
