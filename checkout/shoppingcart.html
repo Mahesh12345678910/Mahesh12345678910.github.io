@@ -10,6 +10,7 @@
     <script src="../search/search.js"></script>
 
     <script>
+        console.log("UUSERNAME",username);
         window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
@@ -100,97 +101,10 @@
         @import url(https://ats-sb.adobe.com/jjsite/include/css/searchfield.css);
     </style>
     <link rel="shortcut icon" href="https://ats-sb.adobe.com/jjsite/include/images/jj1.ico">
-
-    <script src="../dataLayer.js"></script>
-    <script>
-
-window.adobeDataLayer=window.adobeDataLayer || [];
-        data=JSON.stringify(digitalData);
-        pageData=JSON.parse(data)
-        pageData.page.pageInfo.pageType="home"
-        pageData.event="cart-view"
-        if(username)
-        {
-            username=username.split("=")[1];
-            console.log(username);
-            
-        pageData.user.userInfo.userEmail=username+"@test.com"
-        
-        
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
-            {
-                pageData.user.userInfo.userID=obj.userID;
-                break;
-            }
-        }
-        pageData.user.userInfo.userStatus="Logged In"
-
-        
-      
-        
-        }
-        else
-        {
- 
-        pageData.user.userInfo.userEmail=undefined
-        pageData.user.userInfo.userID=undefined
-        pageData.user.userInfo.userStatus="Not Logged In"
-    
-        
-
-
-        }
-        pageData.commerce=[]
-        let prodString=decodeURI(readCookie("simpleCart"));
-
-        let prods=prodString.split("++");
-
-        for(let i=0;i<prods.length;i++)
-        {
-        
-            let prodParams=prods[i].split("||");
-            console.log(prodParams);
-            let prod_name=prodParams[1].split("=")[1]
-            let sku=undefined
-                if(prod_name)
-                {
-                    let Allprods=GC_Prods
-                    let l1=Allprods.length;
-                    for(let j=0;j<l1;j++)
-                    {
-                        let s_prod=Allprods[j];
-                        let s_prod_name=s_prod.prod_name
-
-                        if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
-                        {
-                            sku=s_prod.prod_id;
-                        }
-                    }
-                }
-            let prodObj={
-                "name" : prodParams[1].split("=")[1],
-                "price" : prodParams[2].split("=")[1],
-                "quantity" : prodParams[3].split("=")[1],
-                "sku" : sku
-
-            }
-            pageData.commerce.push(prodObj)
-        }
-        console.log("HII "+prods)
-
-
-
-
-
-        adobeDataLayer.push(pageData)
-        
-    </script>
+<!-- 
+    <script src="../dataLayer.js"></script> -->
     <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
 
-    <script src="../GeometrixxUsers.js"></script>
 
 
 </head>
@@ -406,8 +320,94 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         </span>
     </div>
     <!--End footer-->
-    <script src="../user.js"></script>
+ 
+    <script>
 
+        window.adobeDataLayer=window.adobeDataLayer || [];
+                let data1=JSON.stringify(digitalData);
+                let pageData1=JSON.parse(data1)
+                pageData1.page.pageInfo.pageType="cart"
+                pageData1.event="cart-view"
+                if(username)
+                {
+                    
+                    console.log("Cart view",username);
+                    
+                pageData.user.userInfo.userEmail=username+"@test.com"
+                
+                
+                for(let i=0;i<GC_Users.length;i++)
+                {
+                    let obj=GC_Users[i];
+                    if(obj.userName==username)
+                    {
+                        pageData.user.userInfo.userID=obj.userID;
+                        break;
+                    }
+                }
+                pageData.user.userInfo.userStatus="Logged In"
+        
+                
+              
+                
+                }
+                else
+                {
+         
+                pageData.user.userInfo.userEmail=undefined
+                pageData.user.userInfo.userID=undefined
+                pageData.user.userInfo.userStatus="Not Logged In"
+            
+                
+        
+        
+                }
+                pageData.commerce=[]
+                let prodString=decodeURI(readCookie("simpleCart"));
+        
+                let prods=prodString.split("++");
+        
+                for(let i=0;i<prods.length;i++)
+                {
+                
+                    let prodParams=prods[i].split("||");
+                    console.log(prodParams);
+                    let prod_name=prodParams[1].split("=")[1]
+                    let sku=undefined
+                        if(prod_name)
+                        {
+                            let Allprods=GC_Prods
+                            let l1=Allprods.length;
+                            for(let j=0;j<l1;j++)
+                            {
+                                let s_prod=Allprods[j];
+                                let s_prod_name=s_prod.prod_name
+        
+                                if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
+                                {
+                                    sku=s_prod.prod_id;
+                                }
+                            }
+                        }
+                    let prodObj={
+                        "name" : prodParams[1].split("=")[1],
+                        "price" : prodParams[2].split("=")[1],
+                        "quantity" : prodParams[3].split("=")[1],
+                        "sku" : sku
+        
+                    }
+                    pageData.commerce.push(prodObj)
+                }
+                console.log("HII "+prods)
+        
+        
+        
+        
+        
+                adobeDataLayer.push(pageData)
+                
+            </script>
+        
     <script>
         
         let checkout_form=document.getElementById("checkout_form")
@@ -416,28 +416,28 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         if(username)
         {
             
-        digitalData.user.userInfo.userEmail=username+"@test.com"
+        // digitalData.user.userInfo.userEmail=username+"@test.com"
         
         
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
-            {
-                digitalData.user.userInfo.userID=obj.userID;
-                break;
-            }
-        }
-        digitalData.user.userInfo.userStatus="Logged In"
+        // for(let i=0;i<GC_Users.length;i++)
+        // {
+        //     let obj=GC_Users[i];
+        //     if(obj.userName==username)
+        //     {
+        //         digitalData.user.userInfo.userID=obj.userID;
+        //         break;
+        //     }
+        // }
+        // digitalData.user.userInfo.userStatus="Logged In"
         checkout_form.action="./shipping1.html"
         
         }
         else
         {
  
-        digitalData.user.userInfo.userEmail=undefined
-        digitalData.user.userInfo.userID=undefined
-        digitalData.user.userInfo.userStatus="Not Logged In"
+        // digitalData.user.userInfo.userEmail=undefined
+        // digitalData.user.userInfo.userID=undefined
+        // digitalData.user.userInfo.userStatus="Not Logged In"
         checkout_form.action="../login.html"
 
 
@@ -446,11 +446,27 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
        
 
 
-</script>
+// </script>
+<script type="text/javascript">
+    if(username)
+{
+  
+  let auserLogin=document.getElementById("userLogin");
+  if(auserLogin)
+  {
+      console.log(username);
+  auserLogin.href="./user.html";
+
+  auserLogin.innerText=username;
+  }
+}
+      _satellite.pageBottom();
+  </script>
+
     <!--Place DTM footer below this-->
 
     <script type="text/javascript">
-        digitalData.page.pageInfo.pageType="cart";
+       
         _satellite.pageBottom();
     </script>
  <!--Place DTM footer above this-->
