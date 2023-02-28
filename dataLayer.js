@@ -43,7 +43,7 @@
         digitalData.page.pageInfo.pageURL=document.URL;
         digitalData.page.pageInfo.referrerURL=document.referrer;
 
-        let pageURL=document.URL;
+         pageURL=document.URL;
         let urlobj=new URL(pageURL);
         let categories=urlobj.pathname.split("/");
         for(let i=0;i<categories.length;i+=1)

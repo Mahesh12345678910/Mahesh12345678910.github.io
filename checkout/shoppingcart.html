@@ -3,6 +3,70 @@
 
 <head>
 
+
+    <script src="../dataLayer.js"></script>
+    <script src="../user.js"></script>
+    <script src="../GeometrixxUsers.js"></script>
+
+    <script>
+        window.adobeDataLayer=window.adobeDataLayer || [];
+        let data=JSON.stringify(digitalData);
+        let pageData=JSON.parse(data)
+        pageData.page.pageInfo.pageType="home"
+        pageData.event="pageView"
+        if(username)
+        {
+            username=username.split("=")[1];
+            console.log(username);
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+
+
+
+        adobeDataLayer.push(pageData)
+
+    </script>
+
+<script>
+    
+   
+</script>
+
+    <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
+    <!-- <script src="./add_Launch_Script.js"></script> -->
+
+ 
+
+
     <!--Place DTM header below this-->
 
 
