@@ -325,7 +325,7 @@
         </div>
 
         <span style="font: 24px Helvetica,Arial;color:#F05A28;">TOTAL:</span>
-        <span style="font: 20px Helvetica,Arial;color:#F05A28;" class="simpleCart_total"></span> (<span class="simpleCart_quantity"></span> items) <span class="empty"><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></span>
+        <span style="font: 20px Helvetica,Arial;color:#F05A28;" class="simpleCart_total"></span> (<span class="simpleCart_quantity"></span> items) <span class="empty"><a href="javascript:;" class="simpleCart_empty delete_cart">Empty Cart</a></span>
 
         <div style="padding: 30px 0 0 0;">
 
@@ -449,6 +449,99 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
 
 // </script>
+
+<script>
+    let delete_cart_btn=document.querySelector(".delete_cart");
+    if(delete_cart_btn)
+    {
+        delete_cart_btn.onclick=function(e)
+        {
+            window.adobeDataLayer=window.adobeDataLayer || [];
+        let data=JSON.stringify(digitalData);
+        let pageData=JSON.parse(data)
+        pageData.page.pageInfo.pageType="cart"
+        pageData.event="cart-delete"
+        if(username)
+        {
+            username=username.split("=")[1];
+            console.log(username);
+            
+        pageData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                pageData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        pageData.user.userInfo.userStatus="Logged In"
+
+        
+      
+        
+        }
+        else
+        {
+ 
+        pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=undefined
+        pageData.user.userInfo.userStatus="Not Logged In"
+    
+        
+
+
+        }
+
+        pageData.commerce=[]
+                let prodString=decodeURI(readCookie("simpleCart"));
+        
+                let prods=prodString.split("++");
+        
+                for(let i=0;i<prods.length;i++)
+                {
+                
+                    let prodParams=prods[i].split("||");
+                    console.log(prodParams);
+                    let prod_name=prodParams[1].split("=")[1]
+                    let sku=undefined
+                    let category=undefined
+                        if(prod_name)
+                        {
+                            let Allprods=GC_Prods
+                            let l1=Allprods.length;
+                            for(let j=0;j<l1;j++)
+                            {
+                                let s_prod=Allprods[j];
+                                let s_prod_name=s_prod.prod_name
+        
+                                if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
+                                {
+                                    sku=s_prod.prod_id;
+                                    category=s_prod.prod_category
+                                }
+                            }
+                        
+                    let prodObj={
+                        "name" : prodParams[1].split("=")[1],
+                        "category" : category,
+                        "sku" : sku
+        
+                    }
+                    pageData.commerce.push(prodObj)
+                }
+                }
+  
+
+
+        adobeDataLayer.push(pageData)
+
+        }
+    }
+</script>
 <script type="text/javascript">
     if(username)
 {
