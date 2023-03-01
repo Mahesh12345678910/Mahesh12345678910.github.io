@@ -13,8 +13,8 @@
         window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
-        pageData.page.pageInfo.pageType="payment"
-        pageData.event="pageView"
+        pageData.page.pageInfo.pageType="shipping"
+        pageData.event="checkout"
         if(username)
         {
             username=username.split("=")[1];
@@ -49,6 +49,49 @@
 
 
         }
+
+        pageData.commerce=[]
+                let prodString=decodeURI(readCookie("simpleCart"));
+        
+                let prods=prodString.split("++");
+        
+                for(let i=0;i<prods.length;i++)
+                {
+                
+                    let prodParams=prods[i].split("||");
+                    console.log(prodParams);
+                    let prod_name=prodParams[1].split("=")[1]
+                    let sku=undefined
+                    let category=undefined
+                        if(prod_name)
+                        {
+                            let Allprods=GC_Prods
+                            let l1=Allprods.length;
+                            for(let j=0;j<l1;j++)
+                            {
+                                let s_prod=Allprods[j];
+                                let s_prod_name=s_prod.prod_name
+        
+                                if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
+                                {
+                                    sku=s_prod.prod_id;
+                                    category=s_prod.prod_category
+                                }
+                            }
+                        
+                    let prodObj={
+                        "name" : prodParams[1].split("=")[1],
+                        "category" : category,
+                        "sku" : sku
+        
+                    }
+                    pageData.commerce.push(prodObj)
+                }
+                }
+                pageData.checkout={
+                    checkout_step_name : "product_shipping"
+                }
+  
 
 
 
@@ -95,7 +138,7 @@
     </style>
     <link rel="shortcut icon" href="https://ats-sb.adobe.com/jjsite/include/images/jj1.ico">
 
-    <script src="../dataLayer.js"></script>
+    <!-- <script src="../dataLayer.js"></script>
     <script>
         digitalData.products=[];
         let prodString=decodeURI(readCookie("simpleCart"));
@@ -116,10 +159,10 @@
         }
         console.log("HII "+prods)
  
-    </script>
+    </script> -->
     <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script>
-
-    <script src="../GeometrixxUsers.js"></script>
+<!-- 
+    <script src="../GeometrixxUsers.js"></script> -->
 
 </head>
 
@@ -630,7 +673,7 @@
                 </td>
 
             </table>
-
+<!-- <a href="../user.html"></a> -->
             <!---Form End--->
 
         </div>
@@ -642,7 +685,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         </span>
     </div>
     <!--End footer-->
-    <script src="../user.js"></script>
+    <!-- <script src="../user.js"></script>
     <script>
         
         if(username)
@@ -672,13 +715,67 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
 
         }
-</script>
+</script> -->
     <!--Place DTM footer below this-->
+    <!-- <script>
+        
+        let checkout_form=document.getElementById("checkout_form")
 
-    <script type="text/javascript">
+       
+        if(username)
+        {
+            
+        // digitalData.user.userInfo.userEmail=username+"@test.com"
+        
+        
+        // for(let i=0;i<GC_Users.length;i++)
+        // {
+        //     let obj=GC_Users[i];
+        //     if(obj.userName==username)
+        //     {
+        //         digitalData.user.userInfo.userID=obj.userID;
+        //         break;
+        //     }
+        // }
+        // digitalData.user.userInfo.userStatus="Logged In"
+        checkout_form.action="./shipping1.html"
+        
+        }
+        else
+        {
+ 
+        // digitalData.user.userInfo.userEmail=undefined
+        // digitalData.user.userInfo.userID=undefined
+        // digitalData.user.userInfo.userStatus="Not Logged In"
+        checkout_form.action="../login.html"
+
+
+        }
+         -->
+       
+
+
+<!-- // </script> -->
+<script type="text/javascript">
+    if(username)
+{
+  
+  let auserLogin=document.getElementById("userLogin");
+  if(auserLogin)
+  {
+      console.log(username);
+  auserLogin.href="../user.html";
+
+  auserLogin.innerText=username;
+  }
+}
+      _satellite.pageBottom();
+  </script>
+
+    <!-- <script type="text/javascript">
         digitalData.page.pageInfo.pageType="shipping";
         _satellite.pageBottom();
-    </script>
+    </script> -->
 
     <!--Place DTM footer above this-->
 
