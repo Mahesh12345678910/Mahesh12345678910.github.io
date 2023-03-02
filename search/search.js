@@ -72,7 +72,7 @@ let GC_Prods=[
 
     },
     {
-        prod_name : "Fur Trim Ski Jacket",
+        prod_name : "Fur-Trim Ski Jacket",
         src:"https://ats-sb.adobe.com/jjsite/include/images/active2.jpg",
         path:"../women/activewear/fur_trim_ski_jacket.html",
         prod_id : "100241",
