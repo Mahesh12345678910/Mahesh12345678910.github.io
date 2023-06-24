@@ -25,7 +25,7 @@
         if(username)
         {
             username=username.split("=")[1];
-        pageData.user.userInfo.userEmail=username+"@test.com"
+
         
         
         for(let i=0;i<GC_Users.length;i++)
@@ -46,7 +46,7 @@
         else
         {
  
-        pageData.user.userInfo.userEmail=undefined
+
         pageData.user.userInfo.userID=undefined
         pageData.user.userInfo.userStatus="Not Logged In"
     
@@ -331,7 +331,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
      if(username)
         {
             
-        digitalData.user.userInfo.userEmail=username+"@test.com"
         
         
         for(let i=0;i<GC_Users.length;i++)
@@ -349,7 +348,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         else
         {
  
-        digitalData.user.userInfo.userEmail=undefined
         digitalData.user.userInfo.userID=undefined
         digitalData.user.userInfo.userStatus="Not Logged In"
 
@@ -378,7 +376,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                 username=username.split("=")[1];
                 console.log(username);
                 
-            pageData.user.userInfo.userEmail=username+"@test.com"
             
             
             for(let i=0;i<GC_Users.length;i++)
@@ -399,8 +396,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
             else
             {
      
-            pageData.user.userInfo.userEmail=undefined
-            pageData.user.userInfo.userID=undefined
+            pageData.user.userInfo.userID=""
             pageData.user.userInfo.userStatus="Not Logged In"
         
             }
@@ -494,7 +490,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     {
         username=username.split("=")[1];
         
-    pageData.user.userInfo.userEmail=username+"@test.com"
     
     
     for(let i=0;i<GC_Users.length;i++)
@@ -515,8 +510,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     else
     {
 
-    pageData.user.userInfo.userEmail=undefined
-    pageData.user.userInfo.userID=undefined
+    pageData.user.userInfo.userID=""
     pageData.user.userInfo.userStatus="Not Logged In"
 
     
