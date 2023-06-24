@@ -10,10 +10,11 @@
 
                 },
                 categories :{
-                    primaryCategory:undefined,
-                    subCategory1:undefined,
-                    subCategory2 : undefined,
-                    subCategory3 : undefined
+                    //No Undefined values should be passed
+                    primaryCategory:"",
+                    subCategory1:"",
+                    subCategory2 : "",
+                    subCategory3 : ""
                 },
                 attributes:{
                     country:"in",
@@ -28,9 +29,9 @@
                     
                     userInfo:{
 
-                    userEmail: undefined,
-                    userID : undefined,
-                    userStatus : undefined
+                    userEmail: "",
+                    userID : "",
+                    userStatus : ""
                     }
 
                     
