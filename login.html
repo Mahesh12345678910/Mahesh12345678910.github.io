@@ -20,7 +20,7 @@
         {
             username=username.split("=")[1]
             
-        pageData.user.userInfo.userEmail=username+"@test.com"
+        // pageData.user.userInfo.userEmail=username+"@test.com"
         
         
         for(let i=0;i<GC_Users.length;i++)
@@ -41,8 +41,8 @@
         else
         {
  
-        pageData.user.userInfo.userEmail=undefined
-        pageData.user.userInfo.userID=undefined
+        // pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=""
         pageData.user.userInfo.userStatus="Not Logged In"
     
         
@@ -91,7 +91,7 @@ function logIn() {
         {
             username=username.split("=")[1]
             
-        pageData.user.userInfo.userEmail=username+"@test.com"
+        // pageData.user.userInfo.userEmail=username+"@test.com"
         
         
         for(let i=0;i<GC_Users.length;i++)
@@ -112,8 +112,8 @@ function logIn() {
         else
         {
  
-        pageData.user.userInfo.userEmail=undefined
-        pageData.user.userInfo.userID=undefined
+        // pageData.user.userInfo.userEmail=undefined
+        pageData.user.userInfo.userID=""
         pageData.user.userInfo.userStatus="Not Logged In"
     
         
@@ -330,7 +330,7 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
             else
             {
      
-            digitalData.user.userInfo.userEmail=undefined
+
             digitalData.user.userInfo.userID=undefined
             digitalData.user.userInfo.userStatus="Not Logged In"
             window.adobeDataLayer=window.adobeDataLayer ||[]
@@ -360,7 +360,7 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
                 username=username.split("=")[1];
                 console.log(username);
                 
-            pageData.user.userInfo.userEmail=username+"@test.com"
+
             
             
             for(let i=0;i<GC_Users.length;i++)
@@ -381,8 +381,7 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
             else
             {
      
-            pageData.user.userInfo.userEmail=undefined
-            pageData.user.userInfo.userID=undefined
+            pageData.user.userInfo.userID=""
             pageData.user.userInfo.userStatus="Not Logged In"
         
             }

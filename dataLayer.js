@@ -29,7 +29,7 @@
                     
                     userInfo:{
 
-                    userEmail: "",
+
                     userID : "",
                     userStatus : ""
                     }
