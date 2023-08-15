@@ -12,58 +12,6 @@
 
     <script src="../../user.js"></script>
     <script src="../../GeometrixxUsers.js"></script>
-    <script id="dataLayer_script">
-        window.adobeDataLayer=window.adobeDataLayer || [];
-        let data=JSON.stringify(digitalData);
-        let pageData=JSON.parse(data)
-        pageData.page.pageInfo.pageType="productDetail"
-        pageData.event="product-view"
-       
-        if(username)
-        {
-            username=username.split("=")[1];
-        
-        
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
-            {
-                pageData.user.userInfo.userID=obj.userID;
-                break;
-            }
-        }
-        pageData.user.userInfo.userStatus="Logged In"
-
-        
-      
-        
-        }
-        else
-        {
- 
-        pageData.user.userInfo.userID=""
-        pageData.user.userInfo.userStatus="Not Logged In"
-    
-        
-
-
-        }
-
-        pageData.commerce=[{
-                    "sku" : "101333",
-                    "name" : "Sequin Dress",
-                    "category" : "Fine Apparel"
-        
-                }
-            
-            ]
-
-
-
-        adobeDataLayer.push(pageData)
-
-    </script>
     
     <script src="../../../add_launch_script.js"></script>
    
@@ -491,6 +439,60 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     
     }
 </script>
+
+<script>
+    window.adobeDataLayer=window.adobeDataLayer || [];
+    let data=JSON.stringify(digitalData);
+    let pageData=JSON.parse(data)
+    pageData.page.pageInfo.pageType="productDetail"
+    pageData.event="product-view"
+   
+    if(username)
+    {
+        username=username.split("=")[1];
+    
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
+        {
+            pageData.user.userInfo.userID=obj.userID;
+            break;
+        }
+    }
+    pageData.user.userInfo.userStatus="Logged In"
+
+    
+  
+    
+    }
+    else
+    {
+
+    pageData.user.userInfo.userID=""
+    pageData.user.userInfo.userStatus="Not Logged In"
+
+    
+
+
+    }
+
+    pageData.commerce=[{
+                "sku" : "101333",
+                "name" : "Sequin Dress",
+                "category" : "Fine Apparel"
+    
+            }
+        
+        ]
+
+
+
+    adobeDataLayer.push(pageData)
+
+</script>
+
 
             <script type="text/javascript">
                   if(username)

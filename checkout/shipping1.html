@@ -8,99 +8,8 @@
     <script src="../GeometrixxUsers.js"></script>
     <script src="../search/search.js"></script>
 
-    <script id="dataLayer_script">
-        console.log("UUSERNAME",username);
-        window.adobeDataLayer=window.adobeDataLayer || [];
-        let data=JSON.stringify(digitalData);
-        let pageData=JSON.parse(data)
-        pageData.page.pageInfo.pageType="shipping"
-        pageData.event="checkout"
-        if(username)
-        {
-            username=username.split("=")[1];
-            console.log(username);
-            
-        pageData.user.userInfo.userEmail=username+"@test.com"
-        
-        
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
-            {
-                pageData.user.userInfo.userID=obj.userID;
-                break;
-            }
-        }
-        pageData.user.userInfo.userStatus="Logged In"
 
-        
-      
-        
-        }
-        else
-        {
- 
-        pageData.user.userInfo.userEmail=undefined
-        pageData.user.userInfo.userID=undefined
-        pageData.user.userInfo.userStatus="Not Logged In"
-    
-        
-
-
-        }
-
-        pageData.commerce=[]
-                let prodString=decodeURI(readCookie("simpleCart"));
-        
-                let prods=prodString.split("++");
-        
-                for(let i=0;i<prods.length;i++)
-                {
-                
-                    let prodParams=prods[i].split("||");
-                    console.log(prodParams);
-                    let prod_name=prodParams[1].split("=")[1]
-                    let sku=undefined
-                    let category=undefined
-                        if(prod_name)
-                        {
-                            let Allprods=GC_Prods
-                            let l1=Allprods.length;
-                            for(let j=0;j<l1;j++)
-                            {
-                                let s_prod=Allprods[j];
-                                let s_prod_name=s_prod.prod_name
-        
-                                if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
-                                {
-                                    sku=s_prod.prod_id;
-                                    category=s_prod.prod_category
-                                }
-                            }
-                        
-                    let prodObj={
-                        "name" : prodParams[1].split("=")[1],
-                        "category" : category,
-                        "sku" : sku
-        
-                    }
-                    pageData.commerce.push(prodObj)
-                }
-                }
-                pageData.checkout={
-                    checkout_step_name : "order_shipping"
-                }
-  
-
-
-
-
-        adobeDataLayer.push(pageData)
-
-    </script>
-
-    <script src="../../add_launch_script.js"></script>
+    <script src="../add_launch_script.js"></script>
 <!-- <script src="https://assets.adobedtm.com/4f2e5e0df740/9d18784bf836/launch-46ff047ac3db-development.min.js" async></script> -->
 
 <!-- <script src="https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js" async></script> -->
@@ -719,6 +628,100 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
 
 <!-- // </script> -->
+
+
+<script id="dataLayer_script">
+    console.log("UUSERNAME",username);
+    window.adobeDataLayer=window.adobeDataLayer || [];
+    let data=JSON.stringify(digitalData);
+    let pageData=JSON.parse(data)
+    pageData.page.pageInfo.pageType="shipping"
+    pageData.event="checkout"
+    if(username)
+    {
+        username=username.split("=")[1];
+        console.log(username);
+        
+    pageData.user.userInfo.userEmail=username+"@test.com"
+    
+    
+    for(let i=0;i<GC_Users.length;i++)
+    {
+        let obj=GC_Users[i];
+        if(obj.userName==username)
+        {
+            pageData.user.userInfo.userID=obj.userID;
+            break;
+        }
+    }
+    pageData.user.userInfo.userStatus="Logged In"
+
+    
+  
+    
+    }
+    else
+    {
+
+    pageData.user.userInfo.userEmail=undefined
+    pageData.user.userInfo.userID=undefined
+    pageData.user.userInfo.userStatus="Not Logged In"
+
+    
+
+
+    }
+
+    pageData.commerce=[]
+            let prodString=decodeURI(readCookie("simpleCart"));
+    
+            let prods=prodString.split("++");
+    
+            for(let i=0;i<prods.length;i++)
+            {
+            
+                let prodParams=prods[i].split("||");
+                console.log(prodParams);
+                let prod_name=prodParams[1].split("=")[1]
+                let sku=undefined
+                let category=undefined
+                    if(prod_name)
+                    {
+                        let Allprods=GC_Prods
+                        let l1=Allprods.length;
+                        for(let j=0;j<l1;j++)
+                        {
+                            let s_prod=Allprods[j];
+                            let s_prod_name=s_prod.prod_name
+    
+                            if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
+                            {
+                                sku=s_prod.prod_id;
+                                category=s_prod.prod_category
+                            }
+                        }
+                    
+                let prodObj={
+                    "name" : prodParams[1].split("=")[1],
+                    "category" : category,
+                    "sku" : sku
+    
+                }
+                pageData.commerce.push(prodObj)
+            }
+            }
+            pageData.checkout={
+                checkout_step_name : "order_shipping"
+            }
+
+
+
+
+
+    adobeDataLayer.push(pageData)
+
+</script>
+
 <script type="text/javascript">
     if(username)
 {
