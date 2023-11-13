@@ -305,35 +305,37 @@
                 console.log(tagName.toLowerCase());
 
                 window.adobeDataLayer = window.adobeDataLayer || [];
-                let data = JSON.stringify(digitalData);
-                let pageData = JSON.parse(data)
-                pageData.page.pageInfo.pageType = "home"
-                pageData.event = "customLinkClick"
-                if (username) {
-                    username = username.split("=")[1];
-                    console.log(username);
+                // let data = JSON.stringify(digitalData);
+                // let pageData = JSON.parse(data)
+                // pageData.page.pageInfo.pageType = "home"
+
+                let pageData1={}
+                pageData1.event = "customLinkClick"
+                // if (username) {
+                //     username = username.split("=")[1];
+                //     console.log(username);
 
 
 
-                    for (let i = 0; i < GC_Users.length; i++) {
-                        let obj = GC_Users[i];
-                        if (obj.userName == username) {
-                            pageData.user.userInfo.userID = obj.userID;
-                            break;
-                        }
-                    }
-                    pageData.user.userInfo.userStatus = "Logged In"
+                //     // for (let i = 0; i < GC_Users.length; i++) {
+                //     //     let obj = GC_Users[i];
+                //     //     if (obj.userName == username) {
+                //     //         pageData.user.userInfo.userID = obj.userID;
+                //     //         break;
+                //     //     }
+                //     // }
+                //     // pageData.user.userInfo.userStatus = "Logged In"
 
 
 
 
-                }
-                else {
+                // }
+                // // else {
 
-                    pageData.user.userInfo.userID = ""
-                    pageData.user.userInfo.userStatus = "Not Logged In"
+                // //     pageData.user.userInfo.userID = ""
+                // //     pageData.user.userInfo.userStatus = "Not Logged In"
 
-                }
+                // // }
 
                 let ctaType = undefined
                 if (e.target.tagName.toLowerCase() == "button") {
@@ -343,14 +345,14 @@
                     ctaType = "link"
                 }
 
-                pageData.customLinkClick = {
+                pageData1.customLinkClick = {
                     "customLinkText": e.target.innerText,
                     "customLinkType": ctaType
 
                 }
 
 
-                adobeDataLayer.push(pageData)
+                adobeDataLayer.push(pageData1)
                 console.log(adobeDataLayer);
             }
 
@@ -369,7 +371,7 @@
                     cta: data
                 })
             }
-            alert(data)
+          
         }
     </script>
 
