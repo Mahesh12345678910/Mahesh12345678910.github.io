@@ -251,6 +251,8 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         digitalData.user.userInfo.userID=undefined
         digitalData.user.userInfo.userStatus="Not Logged In"
 
+// Set a single product using all available fields
+s.products = "Example category;Example product;;;;eVar1=Example merchandising value 1|eVar2=Example merchandising value 2";
 
         }
 </script> -->
@@ -297,9 +299,11 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         }
 
         pageData.commerce=[{
-        "sku" : "200241",
-        "name" : "Military Jacket",
-        "category" : "Activewear"
+            "sku" : "200241",
+    "name" : "Military Jacket",
+    "category" : "Activewear",
+    "quantity" : 1,
+        "price" : 750.00
 
     }
    
@@ -481,7 +485,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     pageData.commerce=[{
         "sku" : "200241",
     "name" : "Military Jacket",
-    "category" : "Activewear"
+    "category" : "Activewear",
+    "quantity" : 1,
+        "price" : 750.00
 
 }]
 
