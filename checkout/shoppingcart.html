@@ -373,8 +373,10 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                             let prodParams=prods[i].split("||");
                             console.log(prodParams);
                             let prod_name=prodParams[1].split("=")[1]
-                            let sku=undefined
-                            let category=undefined
+                            let sku=""
+                            let category=""
+                            let quantity=""
+                            let price=""
                                 if(prod_name)
                                 {
                                     let Allprods=GC_Prods
@@ -388,13 +390,19 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                                         {
                                             sku=s_prod.prod_id;
                                             category=s_prod.prod_category
-                                        }2
+                                            quantity=s_prod.quantity
+                                            price=s_prod.price
+                                        }
                                     }
                                 
                             let prodObj={
                                 "name" : prodParams[1].split("=")[1],
                                 "category" : category,
-                                "sku" : sku
+                                "sku" : sku,
+                                "quantity" : quantity,
+                                
+                            
+
                 
                             }
                             pageData.commerce.push(prodObj)
