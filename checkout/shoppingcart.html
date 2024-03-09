@@ -318,6 +318,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                 
             </script> -->
             <script>
+
+                username=localStorage.getItem("username")
+
                 console.log("UUSERNAME",username);
                 window.adobeDataLayer=window.adobeDataLayer || [];
                 let data=JSON.stringify(digitalData);
@@ -326,7 +329,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                 pageData.event="cart-view"
                 if(username)
                 {
-                    username=username.split("=")[1];
+                    
                     console.log(username);
                     
                 pageData.user.userInfo.userEmail=username+"@test.com"
