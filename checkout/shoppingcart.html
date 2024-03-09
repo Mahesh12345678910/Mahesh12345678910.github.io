@@ -390,8 +390,10 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                                         {
                                             sku=s_prod.prod_id;
                                             category=s_prod.prod_category
-                                            quantity=s_prod.quantity
-                                            price=s_prod.price
+                                            quantity=prodParams[4].split("=")[1]
+                                            price=prodParams[2].split("=")[1]
+                                            break
+
                                         }
                                     }
                                 
@@ -400,7 +402,8 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                                 "category" : category,
                                 "sku" : sku,
                                 "quantity" : quantity,
-                                
+                                "price" : price
+
                             
 
                 
