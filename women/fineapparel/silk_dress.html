@@ -235,6 +235,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         let pageData=JSON.parse(data)
         pageData.page.pageInfo.pageType="productDetail"
         pageData.event="product-view"
+        let username=localStorage.getItem("username")
     
         if(username)
         {
@@ -332,6 +333,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
             let pageData=JSON.parse(data)
             pageData.page.pageInfo.pageType="home"
             pageData.event="customLinkClick"
+            let username=localStorage.getItem("username")
             if(username)
             {
                 username=username.split("=")[1];
