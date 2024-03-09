@@ -254,16 +254,24 @@
 
     <script>
 
-        window.adobeDataLayer=window.adobeDataLayer || [];
+        try
+        {
+            window.adobeDataLayer=window.adobeDataLayer || [];
         let data = JSON.stringify(digitalData);
         let pageData = JSON.parse(data)
         pageData.page.pageInfo.pageType = "home"
         pageData.event = "pageView"
+
+        let username=localStorage.getItem("username");
         if (username) {
-            username = username.split("=")[1];
+            
             console.log(username);
 
-
+            let loginele=document.getElementById("userLogin");
+            if(loginele)
+            {
+                loginele.innerHTML=username
+            }
 
 
             for (let i = 0; i < GC_Users.length; i++) {
@@ -291,6 +299,12 @@
 
         adobeDataLayer.push(pageData)
         
+    
+        }
+        catch(err)
+        {
+            console.log("ERROR IN PAGE LOAD DATA")
+        }
         document.body.onclick = function (e) {
 
             // console.log(e.target.tagName.toLowerCase())

@@ -281,6 +281,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
     
     <script>
+        let username=localStorage.getItem("username")
         console.log("UUSERNAME",username);
         window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
@@ -289,7 +290,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         pageData.event="purchase"
         if(username)
         {
-            username=username.split("=")[1];
+        
             console.log(username);
             
         pageData.user.userInfo.userEmail=username+"@test.com"
@@ -307,8 +308,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         pageData.user.userInfo.userStatus="Logged In"
 
         
-      
-        
         }
         else
         {
@@ -324,8 +323,10 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
         pageData.commerce=[]
                 let prodString=decodeURI(readCookie("simpleCart"));
-        
-                let prods=prodString.split("++");
+
+                if(prodString && prodString.length>0)
+                {
+                    let prods=prodString.split("++");
         
 
                 for(let i=0;i<prods.length;i++)
@@ -381,6 +382,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                     }
                     pageData.commerce.push(prodObj)
                 }
+                }
+        
+                
                 }
   
 

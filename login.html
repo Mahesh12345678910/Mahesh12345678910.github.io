@@ -42,6 +42,7 @@ function logIn() {
             let data=JSON.stringify(digitalData)
             let logindata=JSON.parse(data)
             logindata.page.pageInfo.pageType="login"
+            localStorage.setItem("username",username)
 
             if(username)
         {
@@ -385,10 +386,13 @@ document.cookie="userName="+username+";expires=Thu, 01 Jan 1970 00:00:00 UTC";
             if(obj.userName==username)
             {
                 pageData.user.userInfo.userID=obj.userID;
+               
                 break;
             }
         }
         pageData.user.userInfo.userStatus="Logged In"
+
+
 
         
       

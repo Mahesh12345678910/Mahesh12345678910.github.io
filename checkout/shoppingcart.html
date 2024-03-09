@@ -239,7 +239,7 @@
 
             <div>
                 <form id="checkout_form" action="#">
-                    <input type="submit"  value="CHECKOUT NOW!" class="button">
+                    <input type="submit" id="checkoutbtn" value="CHECKOUT NOW!" class="button">
                 </form>
             </div>
 
@@ -409,7 +409,10 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         
         let checkout_form=document.getElementById("checkout_form")
 
-       
+       let checkoutbtn=document.getElementById("checkoutbtn")
+
+       checkoutbtn.onclick=function(e)
+       {
         if(username)
         {
             
@@ -441,6 +444,8 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         }
         
        
+       }
+        
 
 
 // </script>
@@ -538,6 +543,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     }
 </script>
 <script type="text/javascript">
+
+let username=localStorage.getItem("username");
+
     if(username)
 {
   
