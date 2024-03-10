@@ -705,7 +705,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                 let prodObj={
                     "name" : prodParams[1].split("=")[1],
                     "category" : category,
-                    "sku" : sku
+                    "sku" : sku,
+                    "quantity" : prodParams[4].split("=")[1],
+                    "price": prodParams[2].split("=")[1]
     
                 }
                 pageData.commerce.push(prodObj)

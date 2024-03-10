@@ -335,6 +335,49 @@ let username=localStorage.getItem("username")
                     checkout_step_name : "order_confirmation"
                 }
 
+                pageData.commerce=[]
+            let prodString=decodeURI(readCookie("simpleCart"));
+    
+            let prods=prodString.split("++");
+    
+            for(let i=0;i<prods.length;i++)
+            {
+            
+                let prodParams=prods[i].split("||");
+                console.log(prodParams);
+                let prod_name=prodParams[1].split("=")[1]
+                let sku=undefined
+                let category=undefined
+                    if(prod_name)
+                    {
+                        let Allprods=GC_Prods
+                        let l1=Allprods.length;
+                        for(let j=0;j<l1;j++)
+                        {
+                            let s_prod=Allprods[j];
+                            let s_prod_name=s_prod.prod_name
+    
+                            if(s_prod_name.toLowerCase()==prod_name.toLowerCase())
+                            {
+                                sku=s_prod.prod_id;
+                                category=s_prod.prod_category
+                            }
+                        }
+                    
+                let prodObj={
+                    "name" : prodParams[1].split("=")[1],
+                    "category" : category,
+                    "sku" : sku,
+                    "quantity" : prodParams[4].split("=")[1],
+                    "price": prodParams[2].split("=")[1]
+    
+                }
+                pageData.commerce.push(prodObj)
+            }
+        }
+
+
+
                 pageData.page.pageInfo.pageName=document.title;
 
 
