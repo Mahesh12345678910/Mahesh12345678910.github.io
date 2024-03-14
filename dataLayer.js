@@ -32,10 +32,12 @@
 
                     userID : "",
                     userStatus : ""
-                    }
+                    },
+                
 
                     
                 },
+                sampleValue: 100
                 
 
         };
