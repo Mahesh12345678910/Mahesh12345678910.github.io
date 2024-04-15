@@ -6,12 +6,17 @@ let GC_Users=[
     },
     {
         "userName" : "ramesh",
-        "password" : "ramesh1234",
+        "password" : "ramesh@1234",
         "userID" : "rthota"
     },
     {
         "userName" : "suresh",
-        "password" : "suresh1234",
+        "password" : "suresh@1234",
         "userID" : "sjakkula"
+    },
+    {
+        "userName" : "naresh",
+        "password" : "naresh@1234",
+        "userID" : "nsithra"
     },
 ]
