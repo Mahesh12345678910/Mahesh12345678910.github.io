@@ -3,7 +3,8 @@ let envs={
  "AEP VANGALA-GDC DEV ENABLEMENT" : "https://assets.adobedtm.com/01296dd00565/885ffeb5e57f/launch-e1386bb73e46-development.min.js",
  "MV_PRACTICE_APPMEASUREMENT-SELF" : "https://assets.adobedtm.com/4f2e5e0df740/9d18784bf836/launch-46ff047ac3db-development.min.js",
  "Mahesh Enablement Web Property-SELF" : "https://assets.adobedtm.com/4f2e5e0df740/7cca5b6f22d0/launch-a539f945e683-development.min.js",
-"AEP EVENT_Forwarding_MVANGALA_Edge_early_access":"https://assets.adobedtm.com/22bf1a13013f/c5cc82af3b95/launch-a756d3742676-development.min.js"
+"AEP EVENT_Forwarding_MVANGALA_Edge_early_access":"https://assets.adobedtm.com/22bf1a13013f/c5cc82af3b95/launch-a756d3742676-development.min.js",
+"AA WEB MVANGALA" : "https://assets.adobedtm.com/01296dd00565/441fbc5ab156/launch-030e63faf28e-development.min.js"
 }
 
 
@@ -13,7 +14,7 @@ dataLayer_script.innerHTML="window.adobeDataLayer = window.adobeDataLayer || [];
 let headTag=document.getElementsByTagName("head")[0];
 
 let launch_script_tag=document.createElement("script");
-launch_script_tag.src= envs["AEP VANGALA-GDC DEV ENABLEMENT"]
+launch_script_tag.src= envs["AA WEB MVANGALA"]
 launch_script_tag.async=true;
 
 
