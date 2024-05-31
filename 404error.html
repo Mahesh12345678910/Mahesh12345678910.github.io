@@ -278,6 +278,195 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 </span>
     </span>
     </div>
+
+    <script src="./dataLayer.js"></script>
+    <script src="./user.js"></script>
+    <script src="./GeometrixxUsers.js"></script>
+
+
+    <script>
+
+        try
+        {
+            window.adobeDataLayer=window.adobeDataLayer || [];
+        let data = JSON.stringify(digitalData);
+        let pageData = JSON.parse(data)
+        pageData.page.pageInfo.pageType = "home"
+        pageData.event = "pageView"
+
+        let username=localStorage.getItem("username");
+        if (username) {
+            
+            console.log(username);
+
+            let loginele=document.getElementById("userLogin");
+            if(loginele)
+            {
+                loginele.innerHTML=username
+            }
+
+
+            for (let i = 0; i < GC_Users.length; i++) {
+                let obj = GC_Users[i];
+                if (obj.userName == username) {
+                    pageData.user.userInfo.userID = obj.userID;
+                    break;
+                }
+            }
+            pageData.user.userInfo.userStatus = "Logged In"
+
+
+
+
+        }
+        else {
+
+            pageData.user.userInfo.userID = ""
+            pageData.user.userInfo.userStatus = "Not Logged In"
+
+        }
+
+    
+
+
+        adobeDataLayer.push(pageData)
+        
+    
+        }
+        catch(err)
+        {
+            console.log("ERROR IN PAGE LOAD DATA")
+        }
+        document.body.onclick = function (e) {
+
+            // console.log(e.target.tagName.toLowerCase())
+            let tagName = e.target.tagName
+            if (tagName == "BUTTON" || tagName == 'A') {
+                console.log(tagName.toLowerCase());
+
+                window.adobeDataLayer = window.adobeDataLayer || [];
+                // let data = JSON.stringify(digitalData);
+                // let pageData = JSON.parse(data)
+                // pageData.page.pageInfo.pageType = "home"
+
+                let pageData1={}
+                pageData1.event = "customLinkClick"
+                // if (username) {
+                //     username = username.split("=")[1];
+                //     console.log(username);
+
+
+
+                //     // for (let i = 0; i < GC_Users.length; i++) {
+                //     //     let obj = GC_Users[i];
+                //     //     if (obj.userName == username) {
+                //     //         pageData.user.userInfo.userID = obj.userID;
+                //     //         break;
+                //     //     }
+                //     // }
+                //     // pageData.user.userInfo.userStatus = "Logged In"
+
+
+
+
+                // }
+                // // else {
+
+                // //     pageData.user.userInfo.userID = ""
+                // //     pageData.user.userInfo.userStatus = "Not Logged In"
+
+                // // }
+
+                let ctaType = undefined
+                if (e.target.tagName.toLowerCase() == "button") {
+                    ctaType = "button"
+                }
+                else {
+                    ctaType = "other"
+                }
+
+                pageData1.customLinkClick = {
+                    "customLinkText": e.target.innerText,
+                    "customLinkType": ctaType
+
+                }
+
+
+                adobeDataLayer.push(pageData1)
+                console.log(adobeDataLayer);
+            }
+
+        }
+    </script>
+
+    <script>
+        let home_link = document.getElementById("home_link");
+
+        home_link.onclick = function (e) {
+            let data = e.target.innerText;
+
+            if (window._satellite) {
+                _satellite.track("ctaAction", {
+                    page: "home",
+                    cta: data
+                })
+            }
+          
+        }
+    </script>
+
+    <!--Place DTM footer below this-->
+    <!-- <script src="./user.js"></script>
+<script>
+    
+    if(username)
+        {
+            
+        
+        
+        for(let i=0;i<GC_Users.length;i++)
+        {
+            let obj=GC_Users[i];
+            if(obj.userName==username)
+            {
+                digitalData.user.userInfo.userID=obj.userID;
+                break;
+            }
+        }
+        digitalData.user.userInfo.userStatus="Logged In"
+
+        window.adobeDataLayer=window.adobeDataLayer ||[]
+        adobeDataLayer.push(digitalData)
+        
+        }
+        else
+        {
+ 
+        digitalData.user.userInfo.userID=undefined
+        digitalData.user.userInfo.userStatus="Not Logged In"
+        window.adobeDataLayer=window.adobeDataLayer ||[]
+        adobeDataLayer.push(digitalData)
+
+
+        }
+</script> -->
+    <script type="text/javascript">
+        if (username) {
+
+            let auserLogin = document.getElementById("userLogin");
+            if (auserLogin) {
+                console.log(username);
+                auserLogin.href = "./user.html";
+
+                auserLogin.innerText = username;
+            }
+        }
+        // _satellite.pageBottom();
+    </script>
+
+    
+
+
     <!--End footer-->
     <!-- <script src="./user.js"></script>
     <script>
@@ -310,36 +499,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         }
 </script> -->
     <!--Place DTM footer below this-->
-    <script type="text/javascript">
-        if(username)
-  {
-      
-      let auserLogin=document.getElementById("userLogin");
-      if(auserLogin)
-      {
-          console.log(username);
-      auserLogin.href="./user.html";
-   
-      auserLogin.innerText=username;
-      }
-  }
-          _satellite.pageBottom();
-      </script>
 
-<script type="text/javascript">
-    if(username)
-{
-  
-  let auserLogin=document.getElementById("userLogin");
-  if(auserLogin)
-  {
-      console.log(username);
-  auserLogin.href="./user.html";
-
-  auserLogin.innerText=username;
-  }
-}
-  </script>
 <!-- 
     <script type="text/javascript">
         digitalData.page.pageInfo.pageType="error";
