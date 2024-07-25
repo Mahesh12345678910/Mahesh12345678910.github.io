@@ -52,14 +52,14 @@ launch_script_tag.async=true;
 
 headTag.append(dataLayer_script)
 headTag.append(launch_script_tag)
-headTag.append(gscripthead)
+// headTag.append(gscripthead)
 
-window.onload=function(e)
-{
-    let bodyTag=document.getElementsByTagName("body")[0];
-    bodyTag.append(gscriptbody)
+// window.onload=function(e)
+// {
+//     let bodyTag=document.getElementsByTagName("body")[0];
+//     bodyTag.append(gscriptbody)
 
-}
+// }
 
 
 
