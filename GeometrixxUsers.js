@@ -2,12 +2,14 @@ let GC_Users=[
     {
         "userName" : "mahesh",
         "password" : "mahesh@1234",
-        "userID" : "mvangala"
+        "userID" : "mvangala",
+        "emailID" : "mahesvangala1997@gmail.com"
     },
     {
         "userName" : "ramesh",
         "password" : "ramesh@1234",
-        "userID" : "rthota"
+        "userID" : "rthota",
+        "emailID" : "maheshvangala01@gmail.com"
     },
     {
         "userName" : "suresh",
