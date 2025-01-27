@@ -41,7 +41,11 @@
     </style>
     <link rel="shortcut icon" href="https://ats-sb.adobe.com/jjsite/include/images/jj1.ico">
 
-
+<style>
+    #wrapper{
+        height: 100%;
+    }
+</style>
 </head>
 
 <body>
@@ -213,6 +217,57 @@
                     <p />
             </div>
         </td>
+        <tr>
+            <td valign="top" id="recommended_section">
+                <div>
+                    <b class="search_title">Recommended Products for You</b>
+                    </div>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <div class="search_content">
+                                <div class="search_content_inner">
+
+                                    <a href="sport_jacket.html"><img src="https://ats-sb.adobe.com/jjsite/include/images/man-active4.jpg" class="photo" width="190" border="0" />
+                                    </a>
+                                    <br />
+
+
+                                    <div class="search_title recommended"><a href="sport_jacket.html">Sport Jacket</a>
+                                    </div>
+
+
+                                    </div>
+
+                                  </div>  
+                                   <div class="search_content">
+                                <div class="search_content_inner">
+
+                                    <a href="./hooded_sweater.html"><img src="https://ats-sb.adobe.com/jjsite/include/images/man-active2.jpg" class="photo" width="190" border="0" />
+                                    </a>
+                                    <br />
+
+
+                                    <div class="search_title recommended"><a href="./hooded_sweater.html">Houded Sweater</a>
+                                    </div>
+
+
+                                    </div>
+
+                                  </div>  
+                        </td>
+                    </tr>
+                    
+           
+                       
+
+                    </div>
+                </div>
+                </div>
+
+            </td>
+        </tr>
         </table>
     </div>
     <!--start footer-->
@@ -386,6 +441,48 @@ s.products = "Example category;Example product;;;;eVar1=Example merchandising va
     
         }
     </script>
+
+<script>
+    const state={
+        currentSection : null
+    }
+    const observer=new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+            if(entry.isIntersecting && state.currentSection==null)
+        {
+            state.currentSection=entry.target.id
+            console.log(`Section Entered : ${state.currentSection}`);
+
+            var products=[]
+
+            var w_products=document.getElementsByClassName("recommended")
+            for(i=0;i<w_products.length;i++)
+        {
+            var obj={}
+            obj.name=w_products[i].innerText;
+        products[i]=obj
+
+        }
+        var data_obj={
+            "event" : "recommended_products_impression",
+            "products" :products
+        }
+        window.adobeDataLayer=window.adobeDataLayer||[]
+        adobeDataLayer.push(data_obj)
+
+        }
+        })
+    },
+    {
+        root:null,
+        threshold: 0.9
+    }
+);
+
+var target_section=document.getElementById("recommended_section")
+observer.observe(target_section);
+
+</script>
     
     <!-- <script>
         window.adobeDataLayer=window.adobeDataLayer || [];

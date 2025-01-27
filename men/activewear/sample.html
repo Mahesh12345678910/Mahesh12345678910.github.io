@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intersection Observer Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      height: 100vh;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    #section2 {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <section id="section1">Section 1</section>
+  <section id="section2">Section 2 (Watch me!)</section>
+  <section id="section3">Section 3</section>
+
+  <script>
+    // Define the object to update
+    const state = {
+      currentSection: null,
+    };
+
+    // Get the target section
+    const targetSection = document.getElementById('section2');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Update the object when the section enters the viewport
+          state.currentSection = entry.target.id;
+          console.log(`Section entered: ${state.currentSection}`);
+        }
+      });
+    }, {
+      root: null, // Use the viewport as the root
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    });
+
+    // Start observing the target section
+    observer.observe(targetSection);
+  </script>
+</body>
+</html>
