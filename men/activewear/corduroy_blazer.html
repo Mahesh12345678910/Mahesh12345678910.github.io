@@ -214,9 +214,10 @@
                             This is the nicest casual jacket available.
                             <p>
                                 <span class="cart">
-<form action="../../checkout/shoppingcart.html">
-<button type=submit onclick="fun()" name="sku" value="200240" class="button add-to-cart">ADD TO CART</button>
-</form>
+
+
+<button onclick="fun()" name="sku" value="200240" class="button add-to-cart">ADD TO CART</button>
+
 </span>
                                 <p />
                         </div>
@@ -505,6 +506,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
        
         function fun()
         {
+                
             simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
         
             window.adobeDataLayer=window.adobeDataLayer || [];
@@ -563,7 +565,12 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         
         console.log(adobeDataLayer);
         console.log("debug point");
-        
+        window._satellite=window._satellite||{}
+        _satellite.pageBottom();
+        setTimeout(() => {
+            window.location.href="../../checkout/shoppingcart.html"
+        }, 5000);
+
         }
     </script>
 
