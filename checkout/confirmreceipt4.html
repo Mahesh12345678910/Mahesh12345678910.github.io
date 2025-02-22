@@ -338,6 +338,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                     let sku=undefined
                     let category=undefined
                     let total_price=undefined
+                    let price=undefined
                     let quantity=undefined
                     
                         if(prod_name)
@@ -369,7 +370,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                         }
                    
 
-                        total_price=single_price*quantity;
+                
                         
                         
                     let prodObj={
@@ -377,7 +378,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                         "category" : category,
                         "sku" : sku,
                         "quantity" : quantity,
-                        "total_price" : total_price
+                        "total_price" : single_price
         
                     }
                     pageData.commerce.push(prodObj)
