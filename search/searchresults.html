@@ -418,6 +418,8 @@
         //     digitalData.event="siteSearch"
         //     digitalData.search.numberOfResults=count;
         // }
+
+        digitalData=pageData
         adobeDataLayer.push(pageData)
     
         //SEARCH RESULT CLICKTHROUGH
@@ -504,6 +506,7 @@
                 "clickedTitle" : e.target.innerText
            }
 
+           digitalData=pageData
            adobeDataLayer.push(pageData)
 
            window.location.href=e.target.href;
@@ -559,7 +562,7 @@
     }
 
 
-
+digitalData=pageData
 
     adobeDataLayer.push(pageData)
 
@@ -628,6 +631,8 @@
 
         }
 
+
+        digitalData=pageData
 
         adobeDataLayer.push(pageData)
         console.log(adobeDataLayer);

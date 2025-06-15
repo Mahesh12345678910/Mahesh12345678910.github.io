@@ -366,6 +366,8 @@ s.products = "Example category;Example product;;;;eVar1=Example merchandising va
 ]
 
 
+    digitalData=pageData
+
         adobeDataLayer.push(pageData)
 
     </script>
@@ -435,6 +437,7 @@ s.products = "Example category;Example product;;;;eVar1=Example merchandising va
             }
     
     
+            digitalData=pageData
             adobeDataLayer.push(pageData)
             console.log(adobeDataLayer);
             }
@@ -468,6 +471,8 @@ s.products = "Example category;Example product;;;;eVar1=Example merchandising va
             "products" :products
         }
         window.adobeDataLayer=window.adobeDataLayer||[]
+
+        digitalData=data_obj
         adobeDataLayer.push(data_obj)
 
         }
@@ -590,6 +595,7 @@ observer.observe(target_section);
 
 
 
+digitalData=pageData
 
     adobeDataLayer.push(pageData)
 
