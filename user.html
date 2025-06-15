@@ -297,8 +297,14 @@ window.location.href="./index.html";
         }
 
 
+        digitalData=pageData
+
         adobeDataLayer.push(pageData)
         console.log(adobeDataLayer);
+           
+            if (window._satellite) {
+                _satellite.track("ctaAction")
+            }
         }
 
     }

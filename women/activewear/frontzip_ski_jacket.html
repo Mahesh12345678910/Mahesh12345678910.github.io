@@ -326,6 +326,12 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
 
         adobeDataLayer.push(pageData)
         console.log(adobeDataLayer);
+
+           
+            if (window._satellite) {
+                _satellite.track("ctaAction")
+            }
+            
         }
 
     }
