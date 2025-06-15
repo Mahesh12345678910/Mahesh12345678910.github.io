@@ -439,10 +439,7 @@
             let data = e.target.innerText;
 
             if (window._satellite) {
-                _satellite.track("ctaAction", {
-                    page: "home",
-                    cta: data
-                })
+                _satellite.track("ctaAction")
             }
           
         }
@@ -501,13 +498,7 @@
         
         if(window._satellite)
     {
-        _satellite.track("pageLoad", {
-            page: document.title,
-            pageType: "homepage",
-            userID: "GC1234",
-
-
-        })
+        _satellite.track("pageLoad")
     }
     </script>
 
