@@ -362,6 +362,12 @@
         
         digitalData=pageData
         digitalData["event"]="pageView"
+
+           
+        if(window._satellite)
+    {
+        _satellite.track("pageLoad")
+    }
         
     
         }
@@ -425,6 +431,10 @@
 
                 digitalData=pageData1
 
+                
+            if (window._satellite) {
+                _satellite.track("ctaAction")
+            }
                 adobeDataLayer.push(pageData1)
                 console.log(adobeDataLayer);
             }
@@ -438,9 +448,6 @@
         home_link.onclick = function (e) {
             let data = e.target.innerText;
 
-            if (window._satellite) {
-                _satellite.track("ctaAction")
-            }
           
         }
     </script>
@@ -495,11 +502,7 @@
     </script>
 
     <script>
-        
-        if(window._satellite)
-    {
-        _satellite.track("pageLoad")
-    }
+     
     </script>
 
 </body>
