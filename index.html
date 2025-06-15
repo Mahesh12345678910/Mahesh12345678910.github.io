@@ -497,6 +497,9 @@
     </script>
 
     <script>
+        
+        if(window._satellite)
+    {
         _satellite.track("pageLoad", {
             page: document.title,
             pageType: "homepage",
@@ -504,6 +507,7 @@
 
 
         })
+    }
     </script>
 
 </body>
