@@ -406,11 +406,10 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         pageData.page.pageInfo.pageType="product"
         pageData.event="product-view"
       
+        username=localStorage.getItem("username")
         if(username)
         {
-            username=username.split("=")[1];
-
-        
+      
         
         for(let i=0;i<GC_Users.length;i++)
         {

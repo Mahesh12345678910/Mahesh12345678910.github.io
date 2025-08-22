@@ -49,7 +49,7 @@ let launch_script_tag=document.createElement("script");
 
 // launch_script_tag.src= envs["Mahesh Enablement Web Property-SELF"]
 
-launch_script_tag.src= envs["MV_PRACTICE_APPMEASUREMENT-SELF"]
+launch_script_tag.src= envs["AEP VANGALA-GDC DEV ENABLEMENT"]
 launch_script_tag.async=true;
 
 

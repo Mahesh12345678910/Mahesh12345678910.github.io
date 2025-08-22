@@ -338,7 +338,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
             let username=localStorage.getItem("username")
             if(username)
             {
-                username=username.split("=")[1];
                 console.log(username);
                 
             
@@ -462,9 +461,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     pageData.page.pageInfo.pageType="productDetail"
     pageData.event="cart-add"
   
+    username=localStorage.getItem("username")
     if(username)
     {
-        username=username.split("=")[1];
         
     
     

@@ -13,7 +13,7 @@
     <script src="../../GeometrixxUsers.js"></script>
     <script src="../../user.js"></script>
    
-<script src="../../../add_launch_script.js"></script>
+<script src="../../add_launch_script.js"></script>
 
     
     
@@ -28,9 +28,7 @@
     <script type="text/javascript" src="https://ats-sb.adobe.com/jjsite/include/scripts/searchfield.js"></script>
     <script type="text/javascript" src="https://ats-sb.adobe.com/jjsite/include/scripts/simpleCart.js"></script>
     <script language="JavaScript" type="text/javascript">
-        window.onunload = function() {
-            void(0)
-        }
+       
     </script>
     <script language="JavaScript">
         <!--if (document.images) {pic1= new Image(200,70); pic1.src="https://ats-sb.adobe.com/jjsite/include/images/jj_logo_green.png";}//-->
@@ -268,6 +266,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         // e.preventDefault();
         // console.log(e.target.tagName.toLowerCase())
         let tagName=e.target.tagName
+        let userName=localStorage.getItem("username")
         if(tagName =="BUTTON" || tagName=='A')
         {
             console.log(tagName.toLowerCase());
@@ -280,7 +279,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         let username=localStorage.getItem("username")
         if(username)
         {
-            username=username.split("=")[1];
+
             console.log(username);
             
         
@@ -408,7 +407,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
    
     if(username)
     {
-        username=username.split("=")[1];
     
     
     for(let i=0;i<GC_Users.length;i++)
@@ -473,10 +471,11 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     let pageData=JSON.parse(data)
     pageData.page.pageInfo.pageType="productDetail"
     pageData.event="cart-add"
+
+    username=localStorage.getItem("username")
   
     if(username)
     {
-        username=username.split("=")[1];
         
     
     

@@ -30,9 +30,7 @@
     <script type="text/javascript" src="https://ats-sb.adobe.com/jjsite/include/scripts/searchfield.js"></script>
     <script type="text/javascript" src="https://ats-sb.adobe.com/jjsite/include/scripts/simpleCart.js"></script>
     <script language="JavaScript" type="text/javascript">
-        window.onunload = function() {
-            void(0)
-        }
+       
     </script>
     <script language="JavaScript">
         <!--if (document.images) {pic1= new Image(200,70); pic1.src="https://ats-sb.adobe.com/jjsite/include/images/jj_logo_green.png";}//-->
@@ -230,7 +228,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     <!--End footer-->
     <script src="../../user.js"></script>
     <script>
-        
+        username=localStorage.getItem("username");
         if(username)
         {
             
@@ -274,12 +272,13 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         let pageData=JSON.parse(data)
         pageData.page.pageInfo.pageType="home"
         pageData.event="customLinkClick"
+          let username=localStorage.getItem("username");
         if(username)
         {
             username=username.split("=")[1];
             console.log(username);
             
-        ""=username+"@test.com"
+        pageData.user.userInfo.userEmail=username+"@test.com"
         
         
         for(let i=0;i<GC_Users.length;i++)
@@ -300,8 +299,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         else
         {
  
-        ""=undefined
-        pageData.user.userInfo.userID=""
+         pageData.user.userInfo.userID=""
         pageData.user.userInfo.userStatus="Not Logged In"
     
         }
@@ -391,6 +389,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         let pageData=JSON.parse(data)
         pageData.page.pageInfo.pageType="productDetail"
         pageData.event="product-view"
+          let username=localStorage.getItem("username");
       
         if(username)
         {
@@ -415,7 +414,6 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         else
         {
  
-        ""=undefined
         pageData.user.userInfo.userID=""
         pageData.user.userInfo.userStatus="Not Logged In"
     
@@ -465,7 +463,7 @@ digitalData=pageData
         {
             username=username.split("=")[1];
             
-        ""=username+"@test.com"
+
         
         
         for(let i=0;i<GC_Users.length;i++)
@@ -486,7 +484,6 @@ digitalData=pageData
         else
         {
     
-        ""=undefined
         pageData.user.userInfo.userID=undefined
         pageData.user.userInfo.userStatus="Not Logged In"
     
