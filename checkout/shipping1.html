@@ -674,7 +674,15 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     }
 
     pageData.commerce=[]
-            let prodString=decodeURI(readCookie("simpleCart"));
+
+    var doc_cookies=document.cookie.split("; ")
+
+    for(var i=0;i<doc_cookies.length;i++)
+    {
+        if(doc_cookies[i].includes("simpleCart="))
+    {
+
+            let prodString=doc_cookies[i];
     
             let prods=prodString.split("++");
     
@@ -724,6 +732,8 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     digitalData=pageData
 
     adobeDataLayer.push(pageData)
+        }
+        }
 
 </script>
 
