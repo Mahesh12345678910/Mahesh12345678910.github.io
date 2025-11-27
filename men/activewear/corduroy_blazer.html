@@ -426,8 +426,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
          
             console.log("HII")
         
-            // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
-        
+             
             window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
         let pageData=JSON.parse(data)
@@ -484,6 +483,9 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
         
         console.log(adobeDataLayer);
         console.log("debug point");
+        
+        simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
+        
         window._satellite=window._satellite||{}
         _satellite.pageBottom();
         setTimeout(() => {

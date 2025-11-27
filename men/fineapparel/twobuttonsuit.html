@@ -451,10 +451,7 @@ digitalData=pageData
        
     function fun()
     {
-        // simpleCart.add('name=Two-button Suit','price=1850.00','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
-        //simpleCart.add('name=Sport Jacket','price=240.00','image=https://ats-sb.adobe.com/jjsite/include/man-active4.jpg');
-        // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
-    
+        
         window.adobeDataLayer=window.adobeDataLayer || [];
     let data=JSON.stringify(digitalData);
     let pageData=JSON.parse(data)
@@ -513,6 +510,11 @@ digitalData=pageData
     
     console.log(adobeDataLayer);
     console.log("debug point");
+
+    simpleCart.add('name=Two-button Suit','price=1850.00','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
+        //simpleCart.add('name=Sport Jacket','price=240.00','image=https://ats-sb.adobe.com/jjsite/include/man-active4.jpg');
+        // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
+    
     
     }
 </script>

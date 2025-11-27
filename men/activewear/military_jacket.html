@@ -546,9 +546,7 @@ observer.observe(target_section);
        
     function fun()
     {
-        // simpleCart.add('name=Military Jacket','price=750.00','image=https://ats-sb.adobe.com/jjsite/include/active_men.jpg');
-        // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
-    
+     
         window.adobeDataLayer=window.adobeDataLayer || [];
     let data=JSON.stringify(digitalData);
     let pageData=JSON.parse(data)
@@ -607,6 +605,11 @@ digitalData=pageData
     console.log(adobeDataLayer);
     console.log("debug point");
     
+       simpleCart.add('name=Military Jacket','price=750.00','image=https://ats-sb.adobe.com/jjsite/include/active_men.jpg');
+        // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
+    
+
+
     }
 </script>
 
