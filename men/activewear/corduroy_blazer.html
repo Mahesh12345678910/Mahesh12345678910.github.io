@@ -219,7 +219,7 @@
 <button onclick="fun()" name="sku" value="200240" class="button add-to-cart">ADD TO CART</button>
 
 </span>
-                                <p />
+                                
                         </div>
                     </td>
                     </tr>
@@ -347,7 +347,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
             // e.preventDefault();
             // console.log(e.target.tagName.toLowerCase())
             let tagName=e.target.tagName
-            if(tagName =="BUTTON" || tagName=='A')
+            if((tagName =="BUTTON" || tagName=='A') && e.target.innerText!="ADD TO CART")
             {
                 console.log(tagName.toLowerCase());
                 
@@ -416,63 +416,17 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     
         }
     </script>
-<!-- 
-     <script>
-        window.adobeDataLayer=window.adobeDataLayer || [];
-        data=JSON.stringify(digitalData);
-        pageData=JSON.parse(data)
-        pageData.page.pageInfo.pageType="productDetail"
-        pageData.event="product-view"
-        
-        if(username)
-        {
-            username=username.split("=")[1];
-            
-        pageData.user.userInfo.userEmail=username+"@test.com"
-        
-        
-        for(let i=0;i<GC_Users.length;i++)
-        {
-            let obj=GC_Users[i];
-            if(obj.userName==username)
-            {
-                pageData.user.userInfo.userID=obj.userID;
-                break;
-            }
-        }
-        pageData.user.userInfo.userStatus="Logged In"
 
-        
-      
-        
-        }
-        else
-        {
- 
-        pageData.user.userInfo.userEmail=undefined
-        pageData.user.userInfo.userID=undefined
-        pageData.user.userInfo.userStatus="Not Logged In"
-    
-        
-
-
-        }
-  
-
-
-
-
-        adobeDataLayer.push(pageData)
-
-    </script> -->
 
 
     <script>
        
         function fun()
         {
-                
-            simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
+         
+            console.log("HII")
+        
+            // simpleCart.add('name=Corduroy Blazer','price=709.99','image=https://ats-sb.adobe.com/jjsite/include/fa_man.jpg');
         
             window.adobeDataLayer=window.adobeDataLayer || [];
         let data=JSON.stringify(digitalData);
