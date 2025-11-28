@@ -1,0 +1,2748 @@
+[
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "24189b16-1bc4-40f2-bd0e-eace42e01bfb-09042909add14b4f-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274845358,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:20:45.358Z",
+            "_id": "24189b16-1bc4-40f2-bd0e-eace42e01bfb-09042909add14b4f-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|order confirmation step 4",
+                    "URL": "https://mahesh12345678910.github.io/checkout/confirmreceipt4.html?"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/orderreview3.html?creditcard=American+Express&cardnumber=37771112223333&security=2002&cardname=Artimus+Vandelay&month=12&year=2018"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:45.357+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:45.358+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|order confirmation step 4",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx|checkout|order confirmation step 4"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:50Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "a3f92440-9d4d-4dad-8286-9f5baaca92b8-b19c56ae738b4a66-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274843483,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:20:43.483Z",
+            "_id": "a3f92440-9d4d-4dad-8286-9f5baaca92b8-b19c56ae738b4a66-0",
+            "web": {
+                "webInteraction": {
+                    "name": "PURCHASE",
+                    "URL": "https://mahesh12345678910.github.io/checkout/orderreview3.html?creditcard=American+Express&cardnumber=37771112223333&security=2002&cardname=Artimus+Vandelay&month=12&year=2018",
+                    "region": "wrapper",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/orderreview3.html?creditcard=American+Express&cardnumber=37771112223333&security=2002&cardname=Artimus+Vandelay&month=12&year=2018"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/payment2.html?firstname=Art&lastname=Vandelay&address1=Adobe+Systems&address2=3900+Adobe+Way&city=Lehi&state=Utah&postalcode=84043&country=United+States+of+America&phone1=1-385&phone2=345-0000"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:43.483+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:43.483+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:48Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "6206cbfa-321f-44a5-af1e-35d0f7f1fbbc-ecb3c0d2b0fa4584-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274840899,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:20:40.899Z",
+            "_id": "6206cbfa-321f-44a5-af1e-35d0f7f1fbbc-ecb3c0d2b0fa4584-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|order review step 3",
+                    "URL": "https://mahesh12345678910.github.io/checkout/orderreview3.html?creditcard=American+Express&cardnumber=37771112223333&security=2002&cardname=Artimus+Vandelay&month=12&year=2018"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/payment2.html?firstname=Art&lastname=Vandelay&address1=Adobe+Systems&address2=3900+Adobe+Way&city=Lehi&state=Utah&postalcode=84043&country=United+States+of+America&phone1=1-385&phone2=345-0000"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:40.898+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:40.899+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|order review step 3",
+                            "eVar4": "geometrixx",
+                            "eVar15": "",
+                            "eVar2": "geometrixx|checkout|order review step 3"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:48Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "a8d43ff2-56d9-456e-9f03-2acea0e9d1f2-814a39ebea9a4e35-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274838782,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:20:38.782Z",
+            "_id": "a8d43ff2-56d9-456e-9f03-2acea0e9d1f2-814a39ebea9a4e35-0",
+            "web": {
+                "webInteraction": {
+                    "name": "Next",
+                    "URL": "https://mahesh12345678910.github.io/checkout/payment2.html?firstname=Art&lastname=Vandelay&address1=Adobe+Systems&address2=3900+Adobe+Way&city=Lehi&state=Utah&postalcode=84043&country=United+States+of+America&phone1=1-385&phone2=345-0000",
+                    "region": "wrapper",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/payment2.html?firstname=Art&lastname=Vandelay&address1=Adobe+Systems&address2=3900+Adobe+Way&city=Lehi&state=Utah&postalcode=84043&country=United+States+of+America&phone1=1-385&phone2=345-0000"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shipping1.html?"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:38.782+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:38.782+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:42Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "64158ea9-ce5d-4675-9997-1d6e3dcfae2c-a96fbe218c4d4b4e-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274832719,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:20:32.719Z",
+            "_id": "64158ea9-ce5d-4675-9997-1d6e3dcfae2c-a96fbe218c4d4b4e-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|payment step 2",
+                    "URL": "https://mahesh12345678910.github.io/checkout/payment2.html?firstname=Art&lastname=Vandelay&address1=Adobe+Systems&address2=3900+Adobe+Way&city=Lehi&state=Utah&postalcode=84043&country=United+States+of+America&phone1=1-385&phone2=345-0000"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shipping1.html?"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:32.719+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:32.719+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|payment step 2",
+                            "eVar4": "geometrixx",
+                            "eVar15": "",
+                            "eVar2": "geometrixx|checkout|payment step 2"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:38Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "5946b565-a8ab-47dd-9088-3815e19d3ea2-c1c2283f04ed4d86-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274830537,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:20:30.537Z",
+            "_id": "5946b565-a8ab-47dd-9088-3815e19d3ea2-c1c2283f04ed4d86-0",
+            "web": {
+                "webInteraction": {
+                    "name": "Next",
+                    "URL": "https://mahesh12345678910.github.io/checkout/shipping1.html?",
+                    "region": "wrapper",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shipping1.html?"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html?sku=201240"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:30.537+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:30.537+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:34Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "163e6490-d4aa-45cc-9811-28f4c6cd9f23-2bd09ced88e74a11-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274824027,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:20:24.027Z",
+            "_id": "163e6490-d4aa-45cc-9811-28f4c6cd9f23-2bd09ced88e74a11-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|shipping step 1",
+                    "URL": "https://mahesh12345678910.github.io/checkout/shipping1.html?"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html?sku=201240"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:50:24.027+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:50:24.027+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|shipping step 1",
+                            "eVar4": "geometrixx",
+                            "eVar15": "",
+                            "eVar2": "geometrixx|checkout|shipping step 1"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:20:29Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "a6e3d026-92e5-4fb1-b1fe-dcafc2cae32b-44d9cc383c244b4f-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274734177,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:54.177Z",
+            "_id": "a6e3d026-92e5-4fb1-b1fe-dcafc2cae32b-44d9cc383c244b4f-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|shipping step 1",
+                    "URL": "https://mahesh12345678910.github.io/checkout/shipping1.html?"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html?sku=201240"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:54.177+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:54.177+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|shipping step 1",
+                            "eVar4": "geometrixx",
+                            "eVar15": "",
+                            "eVar2": "geometrixx|checkout|shipping step 1"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:58Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "b2327974-14f0-4598-823a-8ee7cd719fbf-2c74e23fc7f14866-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274732052,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:52.052Z",
+            "_id": "b2327974-14f0-4598-823a-8ee7cd719fbf-2c74e23fc7f14866-0",
+            "web": {
+                "webInteraction": {
+                    "name": "CHECKOUT NOW!",
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html?sku=201240",
+                    "region": "checkout_form",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html?sku=201240"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:52.052+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:52.052+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:58Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "631ffca9-da3d-431c-b463-71bd4fce04de-63ab05e0a1b94063-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274717653,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:37.653Z",
+            "_id": "631ffca9-da3d-431c-b463-71bd4fce04de-63ab05e0a1b94063-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|shopping cart",
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html?sku=201240"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:37.653+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:37.653+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|shopping cart",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx|checkout|shopping cart"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:42Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "1fbf7519-1c1a-4c10-b7be-248a516afe0e-40e08172982e4b65-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274716306,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:36.306Z",
+            "_id": "1fbf7519-1c1a-4c10-b7be-248a516afe0e-40e08172982e4b65-0",
+            "_aepgdcdevenablement2": {},
+            "web": {
+                "webInteraction": {
+                    "name": "add to cart",
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "name": "geometrixx|men|fine apparel|two-button suit",
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:36.306+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:36.306+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar11": "add to cart",
+                            "eVar6": "twobuttonsuit",
+                            "eVar12": "button",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar5": "fineapparel",
+                            "eVar1": "geometrixx|men|fine apparel|two-button suit",
+                            "eVar4": "men",
+                            "eVar8": "in",
+                            "eVar15": "",
+                            "eVar2": "home",
+                            "eVar3": "geometrixx",
+                            "eVar7": "en"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:42Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "22bda6f5-a44d-4606-9a8d-02904f148b81-f21b3576086544c5-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274716254,
+        "entity": {
+            "eventType": "commerce.productListAdds",
+            "timestamp": "2025-11-27T20:18:36.254Z",
+            "_id": "22bda6f5-a44d-4606-9a8d-02904f148b81-f21b3576086544c5-0",
+            "_aepgdcdevenablement2": {},
+            "productListItems": [
+                {
+                    "name": "Two-Button Suit",
+                    "quantity": 1,
+                    "priceTotal": 1850,
+                    "SKU": "201240",
+                    "productCategories": [
+                        {
+                            "categoryID": "Fineapparel"
+                        }
+                    ]
+                }
+            ],
+            "commerce": {
+                "productListAdds": {
+                    "value": 1
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:36.253+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:36.254+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "geometrixx|men|fine apparel|two-button suit",
+                            "eVar4": "31083102237036748070399502749093444876",
+                            "eVar3": "in",
+                            "eVar2": "productdetail"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:42Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "39bb1a3d-916e-487f-9a65-2accfe1cf401-665888366ebb477a-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274716251,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:36.251Z",
+            "_id": "39bb1a3d-916e-487f-9a65-2accfe1cf401-665888366ebb477a-0",
+            "web": {
+                "webInteraction": {
+                    "name": "ADD TO CART",
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html",
+                    "region": "wrapper",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:36.251+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:36.251+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:39Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "4a84b1dc-de25-4b20-9580-b9f01bec8274-f03abae771474fae-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274715889,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:35.889Z",
+            "_id": "4a84b1dc-de25-4b20-9580-b9f01bec8274-f03abae771474fae-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|men|fine apparel|two-button suit",
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:35.889+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:35.889+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "men",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "men",
+                            "eVar1": "geometrixx|men|fine apparel|two-button suit",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx|men|fine apparel|two-button suit"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:42Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "50facc3d-8374-45cf-a351-da357dbb884e-6134dc36d2184574-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274714974,
+        "entity": {
+            "eventType": "commerce.productViews",
+            "timestamp": "2025-11-27T20:18:34.974Z",
+            "_id": "50facc3d-8374-45cf-a351-da357dbb884e-6134dc36d2184574-0",
+            "_aepgdcdevenablement2": {},
+            "productListItems": [
+                {
+                    "name": "Two-Button Suit",
+                    "quantity": 1,
+                    "priceTotal": 1850,
+                    "SKU": "201240",
+                    "productCategories": [
+                        {
+                            "categoryID": "Fineapparel"
+                        }
+                    ]
+                }
+            ],
+            "commerce": {
+                "productViews": {
+                    "value": 1
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/twobuttonsuit.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:34.974+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:34.974+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "geometrixx|men|fine apparel|two-button suit",
+                            "eVar4": "31083102237036748070399502749093444876",
+                            "eVar3": "in",
+                            "eVar2": "productdetail"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:40Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "3533134c-23ed-43c3-9640-89da4a70fa47-3e515a3b9e0848e7-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274713219,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:33.219Z",
+            "_id": "3533134c-23ed-43c3-9640-89da4a70fa47-3e515a3b9e0848e7-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|men|fine apparel",
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/activewear.html?qp1=active&qp2=wear"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:33.219+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:33.219+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "men",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "men",
+                            "eVar1": "geometrixx|men|fine apparel",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx|men|fine apparel"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:39Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "ebcd6564-fdd6-4ce0-bf8d-73b68796b738-159e6128eae4460a-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274711822,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:31.822Z",
+            "_id": "ebcd6564-fdd6-4ce0-bf8d-73b68796b738-159e6128eae4460a-0",
+            "_aepgdcdevenablement2": {},
+            "web": {
+                "webInteraction": {
+                    "name": "fine apparel",
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "name": "geometrixx|men|activewear",
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/activewear.html?qp1=active&qp2=wear"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/index.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:31.822+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:31.822+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar11": "fine apparel",
+                            "eVar6": "activewear",
+                            "eVar12": "link",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar5": "activewear",
+                            "eVar1": "geometrixx|men|activewear",
+                            "eVar4": "men",
+                            "eVar8": "in",
+                            "eVar15": "mvangala",
+                            "eVar2": "home",
+                            "eVar3": "geometrixx",
+                            "eVar7": "en"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:39Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "700408fb-276f-48d2-8c6b-26a99384fd53-88e6474d197044f8-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274711819,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:31.819Z",
+            "_id": "700408fb-276f-48d2-8c6b-26a99384fd53-88e6474d197044f8-0",
+            "web": {
+                "webInteraction": {
+                    "name": "Fine Apparel",
+                    "URL": "https://mahesh12345678910.github.io/men/fineapparel/fineapparel.html",
+                    "region": "m3",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/activewear.html?qp1=active&qp2=wear"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/index.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:31.819+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:31.819+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:39Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "4681ebfa-572b-4dd9-9ad3-1a9ae3841510-c4fadf04ef6c4c89-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274709267,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:29.267Z",
+            "_id": "4681ebfa-572b-4dd9-9ad3-1a9ae3841510-c4fadf04ef6c4c89-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|men|activewear",
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/activewear.html?qp1=active&qp2=wear"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/index.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:29.267+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:29.267+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "men",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "men",
+                            "eVar1": "geometrixx|men|activewear",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx|men|activewear"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:34Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "2be833e3-34c9-4d41-b7ff-d19d3fefacab-feac5aacb7af457f-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274707877,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:27.877Z",
+            "_id": "2be833e3-34c9-4d41-b7ff-d19d3fefacab-feac5aacb7af457f-0",
+            "_aepgdcdevenablement2": {},
+            "web": {
+                "webInteraction": {
+                    "name": "activewear",
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/index.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:27.877+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:27.877+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar12": "other",
+                            "eVar11": "activewear",
+                            "eVar17": "31083102237036748070399502749093444876"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:34Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "93803b86-7696-45a6-bc02-3cab837eff7c-f38230b730084c3a-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274707873,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:27.873Z",
+            "_id": "93803b86-7696-45a6-bc02-3cab837eff7c-f38230b730084c3a-0",
+            "web": {
+                "webInteraction": {
+                    "name": "Activewear",
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/activewear.html?qp1=active&qp2=wear",
+                    "region": "m3",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/index.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:27.873+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:27.873+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:32Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "a6415721-6966-42cb-b7fa-fd35ee88634b-62eb33d924934d23-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274705959,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:25.959Z",
+            "_id": "a6415721-6966-42cb-b7fa-fd35ee88634b-62eb33d924934d23-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx clothiers",
+                    "URL": "https://mahesh12345678910.github.io/index.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:25.959+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:25.959+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "index",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "index",
+                            "eVar1": "geometrixx clothiers",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx clothiers"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:30Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "3c62ad7a-5f33-4896-9ec8-b63dc17e14cf-55cb53f7801842df-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274704106,
+        "entity": {
+            "eventType": "web.webinteraction.linkClicks",
+            "timestamp": "2025-11-27T20:18:24.106Z",
+            "_id": "3c62ad7a-5f33-4896-9ec8-b63dc17e14cf-55cb53f7801842df-0",
+            "web": {
+                "webInteraction": {
+                    "name": "Continue Shopping",
+                    "URL": "https://mahesh12345678910.github.io/index.html",
+                    "region": "wrapper",
+                    "linkClicks": {
+                        "value": 1
+                    },
+                    "type": "other"
+                },
+                "webPageDetails": {
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/corduroy_blazer.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:24.106+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:24.106+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:28Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "f58eadc3-4bfd-42a0-898b-62f0571db3ef-9515dd55b1604c65-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274694415,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:18:14.415Z",
+            "_id": "f58eadc3-4bfd-42a0-898b-62f0571db3ef-9515dd55b1604c65-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "name": "geometrixx|checkout|shopping cart",
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/corduroy_blazer.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:48:14.415+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:48:14.415+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "testCRMID": [
+                    {
+                        "id": "mvangala",
+                        "authenticatedState": "authenticated",
+                        "primary": false
+                    }
+                ],
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar6": "checkout",
+                            "eVar17": "31083102237036748070399502749093444876",
+                            "eVar9": "en",
+                            "eVar5": "checkout",
+                            "eVar1": "geometrixx|checkout|shopping cart",
+                            "eVar4": "geometrixx",
+                            "eVar15": "mvangala",
+                            "eVar2": "geometrixx|checkout|shopping cart"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:18:19Z"
+    },
+    {
+        "relatedEntityId": "A2-3j5IPru8iKwy9gTaiUYsF",
+        "entityId": "b5f87d2e-5ac4-473f-9b4f-fbf8d697feae-17a2fda320344a7f-0",
+        "sourceId": "69248b52a6bc06be55a99daf",
+        "primaryIdentity": {
+            "namespaceValue": "31083102237036748070399502749093444876",
+            "namespaceCode": "ECID",
+            "idNamespace": "ECID"
+        },
+        "timestamp": 1764274674305,
+        "entity": {
+            "eventType": "web.webpagedetails.pageViews",
+            "timestamp": "2025-11-27T20:17:54.305Z",
+            "_id": "b5f87d2e-5ac4-473f-9b4f-fbf8d697feae-17a2fda320344a7f-0",
+            "_aepgdcdevenablement2": {
+                "app": {
+                    "User": {}
+                }
+            },
+            "web": {
+                "webPageDetails": {
+                    "pageViews": {
+                        "value": 1
+                    },
+                    "URL": "https://mahesh12345678910.github.io/checkout/shoppingcart.html"
+                },
+                "webReferrer": {
+                    "URL": "https://mahesh12345678910.github.io/men/activewear/corduroy_blazer.html"
+                }
+            },
+            "placeContext": {
+                "localTime": "2025-11-28T01:47:54.305+05:30",
+                "localTimezoneOffset": -330,
+                "geo": {
+                    "city": "Bangalore",
+                    "_schema": {
+                        "latitude": 12.96,
+                        "longitude": 77.69
+                    },
+                    "postalCode": "560037",
+                    "stateProvince": "IN-KA",
+                    "countryCode": "IN",
+                    "dmaID": 356004
+                },
+                "ianaTimezone": "Asia/Kolkata",
+                "IPLocalTime": "2025-11-28T01:47:54.305+05:30",
+                "IPLocalTimezoneOffset": 330
+            },
+            "identityMap": {
+                "ECID": [
+                    {
+                        "id": "31083102237036748070399502749093444876",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+            },
+            "environment": {
+                "ISP": "tata play broadband private limited",
+                "domain": "tataplay.com",
+                "browserDetails": {
+                    "userAgentClientHints": {
+                        "mobile": false,
+                        "platform": "Windows",
+                        "brands": [
+                            {
+                                "brand": "Chromium",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Google Chrome",
+                                "version": "142"
+                            },
+                            {
+                                "brand": "Not_A Brand",
+                                "version": "99"
+                            }
+                        ]
+                    },
+                    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36",
+                    "viewportHeight": 536,
+                    "viewportWidth": 565
+                },
+                "ipV4": "101.0.63.167",
+                "type": "browser",
+                "connectionType": "wireless_wifi"
+            },
+            "_experience": {
+                "analytics": {
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar17": "31083102237036748070399502749093444876"
+                        }
+                    }
+                }
+            },
+            "device": {
+                "screenOrientation": "landscape",
+                "screenWidth": 1280,
+                "screenHeight": 720
+            }
+        },
+        "lastModifiedAt": "2025-11-27T20:17:59Z"
+    }
+]
