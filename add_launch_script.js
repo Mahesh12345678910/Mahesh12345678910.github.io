@@ -49,7 +49,7 @@ let headTag=document.getElementsByTagName("head")[0];
 
 let launch_script_tag=document.createElement("script");
 
-launch_script_tag.src= envs["Mahesh Enablement Web Property-SELF"]
+launch_script_tag.src= envs["AA WEB MVANGALA"]
 
 // launch_script_tag.src= envs["AEP VANGALA-GDC DEV ENABLEMENT"]
 
