@@ -56,9 +56,20 @@ launch_script_tag.src= envs["AA WEB MVANGALA"]
 
 launch_script_tag.async=true;
 
+<<<<<<< HEAD
 
 headTag.append(dataLayer_script)
 headTag.append(launch_script_tag)
+=======
+window.adobeDefaultConsent=window.adobeDefaultConsent||""
+window.adobeDefaultConsent="pending"
+
+
+headTag.append(dataLayer_script)
+headTag.append(launch_script_tag)
+
+
+>>>>>>> 05be0b6 (Add Silk Dress product page and Women category landing page)
 // headTag.append(gscripthead)
 
 // window.onload=function(e)

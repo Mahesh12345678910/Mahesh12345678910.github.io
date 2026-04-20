@@ -19,4 +19,10 @@ let GC_Users=[
         "password" : "naresh@1234",
         "userID" : "nsithra1"
     },
+<<<<<<< HEAD
+=======
+    //13 Occurences in Analytics
+    //13 events in CJA
+    
+>>>>>>> 05be0b6 (Add Silk Dress product page and Women category landing page)
 ]
