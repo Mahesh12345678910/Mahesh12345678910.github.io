@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #fff;
+}
+
+#superwrap,
+#wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.head_logo {
+    float: left;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.rightheader {
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.rightheader .checkout a,
+.footer a,
+.head_tabs_bar a,
+.search_title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.rightheader .checkout a {
+    margin-left: 12px;
+}
+
+.head_tabs_bar {
+    clear: both;
+    background: #eee;
+    padding: 10px 0;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+.head_tabs_bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.head_tabs_bar li {
+    position: relative;
+}
+
+.head_tabs_bar li a {
+    color: #333;
+    padding: 5px 6px;
+    display: inline-block;
+}
+
+.head_tabs_bar li div {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 8px;
+    z-index: 1000;
+    min-width: 180px;
+}
+
+.head_tabs_bar li:hover div {
+    display: block;
+}
+
+.product,
+.description,
+.form,
+.cartHeaders,
+.search_title {
+    margin-bottom: 15px;
+}
+
+.product img.photo,
+.itemImage img {
+    border: 1px solid #ccc;
+    display: block;
+    max-width: 100%;
+}
+
+.search_title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.button {
+    background: #f05a28;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer {
+    display: block;
+    clear: both;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 12px;
+}
+
+.footer span {
+    display: inline-block;
+}
+
+.simpleCart_items,
+.itemContainer,
+.totalRow {
+    margin-top: 12px;
+}
+
+.itemContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+    font-size: 14px;
+}
+
+.itemImage {
+    width: 90px;
+}
+
+.itemName,
+.itemPrice,
+.itemQuantity,
+.itemTotal {
+    min-width: 90px;
+}
+
+.search_box input[type="text"] {
+    padding: 5px;
+    width: 180px;
+}
+
+.search_box input[type="submit"] {
+    padding: 5px 8px;
+}
+
+.checkout {
+    margin-top: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
