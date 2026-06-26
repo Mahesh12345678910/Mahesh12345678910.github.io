@@ -683,10 +683,21 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
     
             for(let i=0;i<prods.length;i++)
             {
+                
             
                 let prodParams=prods[i].split("||");
                 console.log(prodParams);
-                let prod_name=prodParams[1].split("=")[1]
+
+                let prod_name=""
+                            if(prodParams?.length>1)
+                        {
+                                prod_name=prodParams[1].split("=")[1]
+                        }
+                        else
+                        {
+                            prod_name=prodParams[0].split("=")[1]
+                        }
+            
                 let sku=undefined
                 let category=undefined
                     if(prod_name)
