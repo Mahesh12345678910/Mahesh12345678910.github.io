@@ -332,18 +332,18 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                     let prod_name=""
                             if(prodParams?.length>1)
                         {
-                                prod_name=prodParams[1].split("=")[1]
+                                prod_name=prodParams[0].split("=")[1]
                         }
                         else
                         {
                             prod_name=prodParams[0].split("=")[1]
                         }
                     
-                    let sku=undefined
-                    let category=undefined
-                    let total_price=undefined
-                    let price=undefined
-                    let quantity=undefined
+                    let sku=""
+                    let category=""
+                    let total_price=""
+                    let price=""
+                    let quantity=""
                     
                         if(prod_name)
                         {
@@ -363,7 +363,7 @@ Copyright &#169 1996-2016 Adobe Digital Learning Services. All Rights Reserved.
                                 }
                             }
                         
-                        let single_price=parseInt(prodParams[2].split("=")[1]);
+                        let single_price=parseInt(prodParams[1].split("=")[1]);
 
                         if(prodParams[4])
                         {
